@@ -186,13 +186,6 @@
   </url>
   
   <url>
-    <loc>https://tover.xyz/tags/Android/</loc>
-    <lastmod>2021-09-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://tover.xyz/tags/PWN/</loc>
     <lastmod>2021-09-18</lastmod>
     <changefreq>daily</changefreq>
@@ -200,7 +193,7 @@
   </url>
   
   <url>
-    <loc>https://tover.xyz/tags/Math/</loc>
+    <loc>https://tover.xyz/tags/Android/</loc>
     <lastmod>2021-09-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -208,6 +201,13 @@
   
   <url>
     <loc>https://tover.xyz/tags/C-C/</loc>
+    <lastmod>2021-09-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://tover.xyz/tags/Math/</loc>
     <lastmod>2021-09-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
