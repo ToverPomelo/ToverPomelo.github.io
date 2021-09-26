@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tover.xyz/2021/09/16/hsctf-2021-trial-wp/</loc>
+    
+    <lastmod>2021-09-26</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tover.xyz/2021/09/26/Fibonacci-series/</loc>
     
     <lastmod>2021-09-26</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://tover.xyz/2021/09/22/CVP-to-SVP/</loc>
     
     <lastmod>2021-09-26</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tover.xyz/2021/09/16/hsctf-2021-trial-wp/</loc>
-    
-    <lastmod>2021-09-16</lastmod>
     
   </url>
   
