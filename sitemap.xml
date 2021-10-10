@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tover.xyz/p/jordan-diagonalizing/</loc>
+    
+    <lastmod>2021-10-09</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tover.xyz/p/Order-GLnFp/</loc>
     
     <lastmod>2021-10-03</lastmod>
@@ -193,7 +200,7 @@
 
   <url>
     <loc>https://tover.xyz/</loc>
-    <lastmod>2021-10-03</lastmod>
+    <lastmod>2021-10-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -201,63 +208,63 @@
   
   <url>
     <loc>https://tover.xyz/tags/Crypto/</loc>
-    <lastmod>2021-10-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://tover.xyz/tags/PWN/</loc>
-    <lastmod>2021-10-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://tover.xyz/tags/Android/</loc>
-    <lastmod>2021-10-03</lastmod>
+    <lastmod>2021-10-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://tover.xyz/tags/Math/</loc>
-    <lastmod>2021-10-03</lastmod>
+    <lastmod>2021-10-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://tover.xyz/tags/C-C/</loc>
-    <lastmod>2021-10-03</lastmod>
+    <loc>https://tover.xyz/tags/PWN/</loc>
+    <lastmod>2021-10-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://tover.xyz/tags/Android/</loc>
+    <lastmod>2021-10-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://tover.xyz/tags/Python/</loc>
-    <lastmod>2021-10-03</lastmod>
+    <lastmod>2021-10-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://tover.xyz/tags/C-C/</loc>
+    <lastmod>2021-10-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://tover.xyz/tags/Linux/</loc>
-    <lastmod>2021-10-03</lastmod>
+    <lastmod>2021-10-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://tover.xyz/tags/ML/</loc>
-    <lastmod>2021-10-03</lastmod>
+    <lastmod>2021-10-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://tover.xyz/tags/Web/</loc>
-    <lastmod>2021-10-03</lastmod>
+    <lastmod>2021-10-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

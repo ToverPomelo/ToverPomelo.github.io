@@ -178,6 +178,47 @@ template {
 [hidden] {
   display: none
 }
+.myspine-spine-widget {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+.myspine-voice-text {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    margin-top: -70px;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #14151685;
+    box-shadow: 0 3px 15px 2px #141516;
+    font-size: xx-small;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    transition: opacity .3s ease-in-out,height .5s ease-in-out;
+}
+
+.myspine-voice-text::before {
+    content: 'VOICE TEXT';
+    display: block;
+    color: #37b2ff;
+    font-weight: 700;
+}
+
+.myspine-voice-text {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.myspine-voice-text::-webkit-scrollbar {
+    display: none;
+}
 .limit-one-line,
 #article-container .flink .flink-list > .flink-list-item a .flink-item-name,
 #article-container .flink .flink-list > .flink-list-item a .flink-item-desc,
