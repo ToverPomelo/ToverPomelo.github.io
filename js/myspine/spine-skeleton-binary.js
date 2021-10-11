@@ -165,12 +165,6 @@
                 let animation = this.readAnimation(animationName);
                 animations[animationName] = animation;
             }
-            console.log(animations);
-            tmp = "";
-            for(var key in animations){
-                tmp += "'" + key + "', ";
-            }
-            console.log(tmp);
         };
         SkeletonJsonConverter.prototype.readByte = function () {
             return this.nextNum < this.data.length ? this.data[this.nextNum++] : null;

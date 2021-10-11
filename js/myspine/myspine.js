@@ -1,5 +1,6 @@
 function MySpine(t) {
     this.config = t,
+    this.urlPrefix = t.spineDir + "sd_21miku_" + t.models[Number.parseInt(Math.random()*t.models.length)].name + "_r/",
     this.widget = null,
     this.widgetContainer = document.querySelector(".myspine-spine-widget"),
     this.voiceText = document.createElement("div"),
@@ -56,7 +57,7 @@ MySpine.prototype = {
     spineWidgetSuccessCallback: function(t) {
         var e = ()=>{
             this.triggerEvents.forEach(t=>window.removeEventListener(t, e)),
-            this.triggerEvents.forEach(t=>window.addEventListener(t, this.tryPlayingIdleVoice.bind(this))),
+            this.triggerEvents.forEach(t=>window.addEventListener(t, this.changeIdleAnimation.bind(this))),
             this.initVoiceComponents(),
             this.initWidgetActions(),
             this.initDragging(),
@@ -92,10 +93,10 @@ MySpine.prototype = {
         this.widget.canvas.onclick = this.interact.bind(this),
         this.widget.state.addListener({
             complete: t=>{
-                this.isPlayingVoice && t.loop ? this.playAllAnimations({
+                (this.isPlayingVoice && t.loop) || this.isIdle() ? this.playRandAnimation({
                     name: t.animation.name,
                     loop: !0
-                }) : this.playAllAnimations(this.animationQueue.shift() || this.getAnimationList("idle"))
+                }) : this.playRandAnimation(this.getAnimationList("idle"))
             }
         })
     },
@@ -162,31 +163,38 @@ MySpine.prototype = {
     },
     interact: function() {
         this.isPlayingVoice || 0 < this.animationQueue.length || !this.isIdle() ? console.warn("互动过于频繁！") : (this.lastInteractTime = Date.now(),
-        this.playAllAnimations(this.getAnimationList("interact")),
+        this.playRandAnimation(this.getAnimationList("interact")),
         this.playVoice(this.getVoice("interact")))
     },
     getUrl: function(t) {
-        return this.config.urlPrefix + t
+        return this.urlPrefix + t
     },
     getAnimationList: function(t) {
         var e = this.config.behaviors[t];
-        return "start" == t || "idle" == t ? [{
+        return "start" == t? [{
             name: e.animation,
             loop: !1
         }] : e.animations.slice()
     },
     getVoice: function(t) {
         var e = this.config.behaviors[t];
-        return "start" == t || "idle" == t ? {
+        return "start" == t? {
             voice: e.voice,
             text: e.text
         } : e.voices[Math.floor(Math.random() * e.voices.length)]
     },
-    playAllAnimations: function(t) {
-        Array.isArray(t) ? (this.playAllAnimations(t.shift()),
-        t.forEach(t=>this.animationQueue.push(t))) : t && this.widget.state.setAnimation(0, t.name, t.loop)
+    playRandAnimation: function(t) {
+        if (Array.isArray(t)) {
+            e = t[Number.parseInt(Math.random()*t.length)];
+            this.widget.state.setAnimation(0, e.name, e.loop);
+        } else {
+            this.widget.state.setAnimation(0, t.name, t.loop);
+        }
     },
     playVoice: function(t) {
+        if (this.getUrl(t.voice) == this.urlPrefix) {
+            return;
+        }
         t && (this.isPlayingVoice = !0,
         this.voicePlayer.src = this.getUrl(t.voice),
         this.voicePlayer.load(),
@@ -202,13 +210,30 @@ MySpine.prototype = {
         ))
     },
     isIdle: function() {
-        return this.widget.state.tracks[0].animation.name == this.getAnimationList("idle")[0].name
+        var e = this.widget.state.tracks[0].animation;
+        for (const v of this.getAnimationList("idle")) {
+            if (v.name == e.name) {
+                return !0;
+            }
+        }
+        return !1;
     },
-    tryPlayingIdleVoice: function() {
+    isInteract: function() {
+        var e = this.widget.state.tracks[0].animation;
+        for (const v of this.getAnimationList("interact")) {
+            if (v.name == e.name) {
+                return !0;
+            }
+        }
+        return !1;
+    },
+    changeIdleAnimation: function() {
         var t = Date.now()
-          , e = t - this.lastInteractTime
-          , i = Math.floor(e / 1e3 / 60 / 60);
-        Math.floor(e / 1e3 / 60 - 60 * i) >= this.config.behaviors.idle.maxMinutes && (this.lastInteractTime = t,
-        this.playVoice(this.getVoice("idle")))
+          , e = t - this.lastInteractTime;
+        if ((this.isIdle() && e/1e3/60 >= this.config.behaviors.idle.maxMinutes) || 
+            (this.isInteract() && e/1e3 >= this.config.behaviors.interact.maxPlaySec)) {
+             this.lastInteractTime = t,
+             this.playRandAnimation(this.getAnimationList("idle"))
+        }
     }
 };
