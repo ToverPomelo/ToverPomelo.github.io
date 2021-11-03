@@ -1,6 +1,10 @@
 function MySpine(t) {
     this.config = t,
-    this.urlPrefix = t.spineDir + "sd_21miku_" + t.models[Number.parseInt(Math.random()*t.models.length)].name + "_r/",
+    this.model = t.models[Number.parseInt(Math.random()*t.models.length)],
+    this.urlPrefix = t.spineDir + this.model.name,
+    this.skin = this.model.skin,
+    this.skeleton = this.urlPrefix + this.model.skeleton,
+    this.atlas = this.urlPrefix + this.model.atlas,
     this.widget = null,
     this.widgetContainer = document.querySelector(".myspine-spine-widget"),
     this.voiceText = document.createElement("div"),
@@ -31,7 +35,7 @@ MySpine.downloadBinary = function(t, e, i) {
 MySpine.prototype = {
     load: function() {
         let i = this.config;
-        MySpine.downloadBinary(this.getUrl(i.skeleton), t=>{
+        MySpine.downloadBinary(this.skeleton, t=>{
             function e(t, e) {
                 for (var i in e)
                     t.style.setProperty(i, e[i])
@@ -42,8 +46,8 @@ MySpine.prototype = {
             t.convertToJson(),
             new spine.SpineWidget(this.widgetContainer,{
                 animation: this.getAnimationList("start")[0].name,
-                skin: i.skin,
-                atlas: this.getUrl(i.atlas),
+                skin: this.skin,
+                atlas: this.atlas,
                 jsonContent: t.json,
                 backgroundColor: "#00000000",
                 loop: !1,
@@ -167,6 +171,9 @@ MySpine.prototype = {
         this.playVoice(this.getVoice("interact")))
     },
     getUrl: function(t) {
+        // a-half-flag
+        var secret = "X2wxdmVseV9ucHlfaGFofQ==";
+        var key = "You will never find me~";
         return this.urlPrefix + t
     },
     getAnimationList: function(t) {
@@ -192,11 +199,13 @@ MySpine.prototype = {
         }
     },
     playVoice: function(t) {
-        if (this.getUrl(t.voice) == this.urlPrefix) {
-            return;
+        voiceUrl = this.getUrl(t.voice);
+        // 如果为空则播放五秒的空语音，仅用来显示文本框
+        if (voiceUrl == this.urlPrefix) {
+            voiceUrl = this.config.spineDir + "default.mp3";
         }
         t && (this.isPlayingVoice = !0,
-        this.voicePlayer.src = this.getUrl(t.voice),
+        this.voicePlayer.src = voiceUrl,
         this.voicePlayer.load(),
         this.voicePlayer.play().then(()=>{
             this.voiceText.innerHTML = t.text,
