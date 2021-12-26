@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Tover&#39; Blog</title>
+  
+  
+  <link href="https://tover.xyz/atom.xml" rel="self"/>
+  
+  <link href="https://tover.xyz/"/>
+  <updated>2021-11-24T09:04:30.174Z</updated>
+  <id>https://tover.xyz/</id>
+  
+  <author>
+    <name>Tover. L</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>华南师范大学HSCTF2021部分Writeup（官方）</title>
+    <link href="https://tover.xyz/p/hsctf-2021-fresh-wp/"/>
+    <id>https://tover.xyz/p/hsctf-2021-fresh-wp/</id>
+    <published>2021-11-24T07:09:58.000Z</published>
+    <updated>2021-11-24T09:04:30.174Z</updated>
+    
+    
+    <summary type="html">给21华师CTF新生赛出了几个题，给一下wp.</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="writeup" scheme="https://tover.xyz/tags/writeup/"/>
+    
+    <category term="Misc" scheme="https://tover.xyz/tags/Misc/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>aircrack-ng+hashcat的wifi口令爆破</title>
+    <link href="https://tover.xyz/p/aircrack-ng-wifi/"/>
+    <id>https://tover.xyz/p/aircrack-ng-wifi/</id>
+    <published>2021-11-08T01:26:51.000Z</published>
+    <updated>2021-11-08T01:45:32.915Z</updated>
+    
+    
+    <summary type="html">最近的安全学作业，反正都写了，就顺便发了.</summary>
+    
+    
+    
+    
+    <category term="Linux" scheme="https://tover.xyz/tags/Linux/"/>
+    
+    <category term="Misc" scheme="https://tover.xyz/tags/Misc/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>EasyCrypt编译安装踩坑记录</title>
+    <link href="https://tover.xyz/p/easy-crypt-install/"/>
+    <id>https://tover.xyz/p/easy-crypt-install/</id>
+    <published>2021-11-04T00:49:16.000Z</published>
+    <updated>2021-11-08T01:28:03.988Z</updated>
+    
+    
+    <summary type="html">这里的EasyCrypt指的是那个密码学的辅助证明工具.</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="Linux" scheme="https://tover.xyz/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>EasyCrypt文档编译踩坑记录</title>
+    <link href="https://tover.xyz/p/easy-crypt-tex/"/>
+    <id>https://tover.xyz/p/easy-crypt-tex/</id>
+    <published>2021-11-02T12:48:56.000Z</published>
+    <updated>2021-11-04T02:18:56.623Z</updated>
+    
+    
+    <summary type="html">第一次见软件文档是要自己编译的 。。。</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="Linux" scheme="https://tover.xyz/tags/Linux/"/>
+    
+    <category term="Latex" scheme="https://tover.xyz/tags/Latex/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2021-ByteCTF的Overheard</title>
+    <link href="https://tover.xyz/p/2021-ByteCTF-Overheard/"/>
+    <id>https://tover.xyz/p/2021-ByteCTF-Overheard/</id>
+    <published>2021-10-17T13:09:56.000Z</published>
+    <updated>2021-10-17T14:12:14.886Z</updated>
+    
+    
+    <summary type="html">解的是HNP（Hidden Number Problem），DLP和格扯上关系了.</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="writeup" scheme="https://tover.xyz/tags/writeup/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2021广东省强网杯的DLP</title>
+    <link href="https://tover.xyz/p/dlp-gdqwb/"/>
+    <id>https://tover.xyz/p/dlp-gdqwb/</id>
+    <published>2021-10-13T11:10:07.000Z</published>
+    <updated>2021-10-13T12:19:54.056Z</updated>
+    
+    
+    <summary type="html">上了一下午班(课)，经典赛后解题.</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="writeup" scheme="https://tover.xyz/tags/writeup/"/>
+    
+    <category term="Math" scheme="https://tover.xyz/tags/Math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GL(n,p)矩阵的对角化 &amp; Jordan Canonical Form</title>
+    <link href="https://tover.xyz/p/jordan-diagonalizing/"/>
+    <id>https://tover.xyz/p/jordan-diagonalizing/</id>
+    <published>2021-10-07T03:36:54.000Z</published>
+    <updated>2021-10-11T15:46:52.606Z</updated>
+    
+    
+    <summary type="html">上上次说了一个模n矩阵的快速计算的两种方法，其实如果能把矩阵“对角化”的话，还可以进一步减少运算复杂度（不过这种方法在模n/模p下比较看运气）；另外，上次在说GL(n,p)的群阶时说了两个简略的证明，如果用Jordan Canonical Form来解释的话好像会更清晰.</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="Math" scheme="https://tover.xyz/tags/Math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GL(n,Fp)群阶的研究</title>
+    <link href="https://tover.xyz/p/Order-GLnFp/"/>
+    <id>https://tover.xyz/p/Order-GLnFp/</id>
+    <published>2021-10-02T14:03:33.000Z</published>
+    <updated>2021-10-10T12:59:36.232Z</updated>
+    
+    
+    <summary type="html">填一下上一篇文章剩下的坑，讲一下模p矩阵群（其实就是GL(n,Fp)）的阶，当时做题的一些猜想和后来找到的证明.</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="Math" scheme="https://tover.xyz/tags/Math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>模n的Fibonacci的快速计算——长安杯的series</title>
+    <link href="https://tover.xyz/p/Fibonacci-series/"/>
+    <id>https://tover.xyz/p/Fibonacci-series/</id>
+    <published>2021-09-26T02:52:13.000Z</published>
+    <updated>2021-10-13T12:20:26.414Z</updated>
+    
+    
+    <summary type="html">摸了昨天长安杯的series，研究了一下模的Fibonacci，算了一下Fibonacci矩阵的阶，搞了个模n的Fibonacci的快速计算方法，记了个笔记.</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="writeup" scheme="https://tover.xyz/tags/writeup/"/>
+    
+    <category term="Math" scheme="https://tover.xyz/tags/Math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CVP到SVP的规约（Embedding Technique）</title>
+    <link href="https://tover.xyz/p/CVP-to-SVP/"/>
+    <id>https://tover.xyz/p/CVP-to-SVP/</id>
+    <published>2021-09-22T08:16:40.000Z</published>
+    <updated>2021-09-28T00:34:04.591Z</updated>
+    
+    
+    <summary type="html">用解SVP的方法解CVP问题.</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="Math" scheme="https://tover.xyz/tags/Math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>出了三道Crypto水题</title>
+    <link href="https://tover.xyz/p/hsctf-2021-trial-wp/"/>
+    <id>https://tover.xyz/p/hsctf-2021-trial-wp/</id>
+    <published>2021-09-16T08:07:02.000Z</published>
+    <updated>2021-10-13T12:20:43.260Z</updated>
+    
+    
+    <summary type="html">最近为Sloth的选拔赛出了三道Crypto“简单题”，应陈队长的要求，写了个WriteUp。</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="writeup" scheme="https://tover.xyz/tags/writeup/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2021羊城杯Crypto公钥部分WriteUp</title>
+    <link href="https://tover.xyz/p/2021-ycb-wp/"/>
+    <id>https://tover.xyz/p/2021-ycb-wp/</id>
+    <published>2021-09-14T12:01:00.000Z</published>
+    <updated>2021-10-13T12:21:03.949Z</updated>
+    
+    
+    <summary type="html">水了三题公钥的Crypto题，都是RSA的，而且都是和n的分解相关的</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="writeup" scheme="https://tover.xyz/tags/writeup/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用格解LWE——笔记</title>
+    <link href="https://tover.xyz/p/lattices-LWE/"/>
+    <id>https://tover.xyz/p/lattices-LWE/</id>
+    <published>2021-09-14T03:13:50.000Z</published>
+    <updated>2021-09-14T11:29:14.423Z</updated>
+    
+    
+    <summary type="html">接上篇继续讨论格密码的攻击，这次是解LWE（CVP问题）</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="Math" scheme="https://tover.xyz/tags/Math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Wiener&#39;s v.s Lattices —— Ax≡y(mod P)的方程解法笔记</title>
+    <link href="https://tover.xyz/p/wieners-lattices-equations/"/>
+    <id>https://tover.xyz/p/wieners-lattices-equations/</id>
+    <published>2021-09-14T03:00:59.000Z</published>
+    <updated>2021-10-21T00:42:25.802Z</updated>
+    
+    
+    <summary type="html">最近做回以前的题，补了一下Wiener攻击和格攻击的方法，发现在解某些问题（简单的同余方程，如整数版本的NTRU）上是有共通之处的，所以就“顺便”做了下笔记。（个人偏向于用格的方法，所以在格方面的笔记会较多</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="Math" scheme="https://tover.xyz/tags/Math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Sage生成超超超大素数</title>
+    <link href="https://tover.xyz/p/sage-huge-prime/"/>
+    <id>https://tover.xyz/p/sage-huge-prime/</id>
+    <published>2021-09-14T02:55:15.000Z</published>
+    <updated>2021-09-14T11:29:41.405Z</updated>
+    
+    
+    <summary type="html">Sage中加快next_prime和random_prime运算速度的方法，及代码溯源</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>🍎🍌🍍</title>
+    <link href="https://tover.xyz/p/cubic/"/>
+    <id>https://tover.xyz/p/cubic/</id>
+    <published>2021-09-14T02:20:21.000Z</published>
+    <updated>2021-09-14T11:28:52.095Z</updated>
+    
+    
+    <summary type="html">hfctf的cubic的writeup，理论 + Sage脚本解法</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="Math" scheme="https://tover.xyz/tags/Math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【摸鱼】写下爬虫</title>
+    <link href="https://tover.xyz/p/spider/"/>
+    <id>https://tover.xyz/p/spider/</id>
+    <published>2021-09-13T14:06:01.000Z</published>
+    <updated>2021-09-14T11:29:57.675Z</updated>
+    
+    
+    <summary type="html">如题，扒“一人之下”的时候踩的坑（当然，不是官网的..）</summary>
+    
+    
+    
+    
+    <category term="Web" scheme="https://tover.xyz/tags/Web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>∫[sec(x)]^n dx</title>
+    <link href="https://tover.xyz/p/sec-x-n-dx/"/>
+    <id>https://tover.xyz/p/sec-x-n-dx/</id>
+    <published>2021-09-13T13:43:03.000Z</published>
+    <updated>2021-09-14T11:29:47.893Z</updated>
+    
+    
+    <summary type="html">高数杀我</summary>
+    
+    
+    
+    
+    <category term="Math" scheme="https://tover.xyz/tags/Math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>水一水GDB调试器的用法（入门+进阶）</title>
+    <link href="https://tover.xyz/p/about-gdb/"/>
+    <id>https://tover.xyz/p/about-gdb/</id>
+    <published>2021-09-13T13:31:44.000Z</published>
+    <updated>2021-09-14T11:28:22.682Z</updated>
+    
+    
+    <summary type="html">水一下GDB的基本用法</summary>
+    
+    
+    
+    
+    <category term="PWN" scheme="https://tover.xyz/tags/PWN/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于C++更换标准库</title>
+    <link href="https://tover.xyz/p/cpp-libc-change/"/>
+    <id>https://tover.xyz/p/cpp-libc-change/</id>
+    <published>2021-09-13T13:24:14.000Z</published>
+    <updated>2021-09-14T11:28:44.259Z</updated>
+    
+    
+    <summary type="html">对之前“编译带debug_info的glibc”的补充，讲一下C++如何换库</summary>
+    
+    
+    
+    
+    <category term="C/C++" scheme="https://tover.xyz/tags/C-C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于PyTorch实现学校sso免验证码登录</title>
+    <link href="https://tover.xyz/p/pytorch-sso-login/"/>
+    <id>https://tover.xyz/p/pytorch-sso-login/</id>
+    <published>2021-09-13T13:15:13.000Z</published>
+    <updated>2021-09-14T11:29:35.152Z</updated>
+    
+    
+    <summary type="html">想怼个自动疫情打卡的脚本，但打卡的时候每次都要登录sso，于是又搞了个自动识别验证码 + 自动登录sso的工具</summary>
+    
+    
+    
+    
+    <category term="Python" scheme="https://tover.xyz/tags/Python/"/>
+    
+    <category term="ML" scheme="https://tover.xyz/tags/ML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Deemo提取MIDI</title>
+    <link href="https://tover.xyz/p/deemo-midi/"/>
+    <id>https://tover.xyz/p/deemo-midi/</id>
+    <published>2021-09-12T14:14:42.000Z</published>
+    <updated>2021-09-14T11:28:58.301Z</updated>
+    
+    
+    <summary type="html">AssetStudio提取Unity Asset + Python脚本提取MIDI（根据Deemo里提供的json文件）</summary>
+    
+    
+    
+    
+    <category term="Python" scheme="https://tover.xyz/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android破解进阶之：元气骑士</title>
+    <link href="https://tover.xyz/p/android-yuanqi/"/>
+    <id>https://tover.xyz/p/android-yuanqi/</id>
+    <published>2021-09-12T14:07:54.000Z</published>
+    <updated>2021-09-14T11:28:39.778Z</updated>
+    
+    
+    <summary type="html">接上篇继续讨论安卓应用的逆向/破解，这次用“元气骑士”为例</summary>
+    
+    
+    
+    
+    <category term="Android" scheme="https://tover.xyz/tags/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android破解初探之：Synthesia</title>
+    <link href="https://tover.xyz/p/android-synthesia/"/>
+    <id>https://tover.xyz/p/android-synthesia/</id>
+    <published>2021-09-12T14:00:58.000Z</published>
+    <updated>2021-09-14T11:28:29.101Z</updated>
+    
+    
+    <summary type="html">用Synthesia入门了一下安卓应用的逆向/破解</summary>
+    
+    
+    
+    
+    <category term="Android" scheme="https://tover.xyz/tags/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>pwnable.tw部分writeup(不定期更新)_Vol.2</title>
+    <link href="https://tover.xyz/p/pwnable-tw-writeup-v2/"/>
+    <id>https://tover.xyz/p/pwnable-tw-writeup-v2/</id>
+    <published>2021-09-12T13:30:47.000Z</published>
+    <updated>2021-09-14T11:29:30.292Z</updated>
+    
+    
+    <summary type="html">如题，上一篇太长了，所以再开一篇分开写</summary>
+    
+    
+    
+    
+    <category term="PWN" scheme="https://tover.xyz/tags/PWN/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>内核PWN入坑指南</title>
+    <link href="https://tover.xyz/p/kernel-pwn/"/>
+    <id>https://tover.xyz/p/kernel-pwn/</id>
+    <published>2021-09-12T13:23:21.000Z</published>
+    <updated>2021-09-14T11:29:08.450Z</updated>
+    
+    
+    <summary type="html">Kernel PWN的入门笔记，2018的强网杯core为例</summary>
+    
+    
+    
+    
+    <category term="PWN" scheme="https://tover.xyz/tags/PWN/"/>
+    
+    <category term="Linux" scheme="https://tover.xyz/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>pwnable.tw部分writeup(不定期更新)</title>
+    <link href="https://tover.xyz/p/pwnable-tw-writeup/"/>
+    <id>https://tover.xyz/p/pwnable-tw-writeup/</id>
+    <published>2021-09-12T12:53:35.000Z</published>
+    <updated>2021-09-14T11:29:25.098Z</updated>
+    
+    
+    <summary type="html">如题</summary>
+    
+    
+    
+    
+    <category term="PWN" scheme="https://tover.xyz/tags/PWN/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【科普】 那些放在不同位置的字符串</title>
+    <link href="https://tover.xyz/p/strings-and-memory/"/>
+    <id>https://tover.xyz/p/strings-and-memory/</id>
+    <published>2021-09-12T12:41:22.000Z</published>
+    <updated>2021-09-14T11:30:07.209Z</updated>
+    
+    
+    <summary type="html">水一下堆和栈的区别</summary>
+    
+    
+    
+    
+    <category term="C/C++" scheme="https://tover.xyz/tags/C-C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>shellcode与shellcode生成</title>
+    <link href="https://tover.xyz/p/shellcode/"/>
+    <id>https://tover.xyz/p/shellcode/</id>
+    <published>2021-09-12T12:35:01.000Z</published>
+    <updated>2021-09-14T11:29:52.507Z</updated>
+    
+    
+    <summary type="html">如题，发现msfvenom还是挺好用的（虽然还是手写最香</summary>
+    
+    
+    
+    
+    <category term="PWN" scheme="https://tover.xyz/tags/PWN/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>编译带debug_info的glibc</title>
+    <link href="https://tover.xyz/p/libc-compile/"/>
+    <id>https://tover.xyz/p/libc-compile/</id>
+    <published>2021-09-12T10:43:53.000Z</published>
+    <updated>2021-09-14T11:29:19.994Z</updated>
+    
+    
+    <summary type="html">编译不同版本的带调试信息的libc，以及在运行时、pwntools脚本、GDB中更换不同的libc库的方法介绍</summary>
+    
+    
+    
+    
+    <category term="PWN" scheme="https://tover.xyz/tags/PWN/"/>
+    
+    <category term="Linux" scheme="https://tover.xyz/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>srand 源码分析（非专业）</title>
+    <link href="https://tover.xyz/p/srand-source/"/>
+    <id>https://tover.xyz/p/srand-source/</id>
+    <published>2021-09-12T09:27:40.000Z</published>
+    <updated>2021-09-14T11:30:02.527Z</updated>
+    
+    
+    <summary type="html">如题（补充：这应该是大二的时候写的了，分析的不太好请见谅）</summary>
+    
+    
+    
+    
+    <category term="C/C++" scheme="https://tover.xyz/tags/C-C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://tover.xyz/p/hello-world/"/>
+    <id>https://tover.xyz/p/hello-world/</id>
+    <published>2021-09-12T09:00:40.000Z</published>
+    <updated>2021-09-14T11:30:31.709Z</updated>
+    
+    
+    <summary type="html">Hello World ~</summary>
+    
+    
+    
+    
+  </entry>
+  
+</feed>
