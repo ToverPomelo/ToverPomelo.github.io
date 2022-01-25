@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2022-01-25T04:28:22.971Z</updated>
+  <updated>2022-01-25T11:24:02.034Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2022HWS冬令营预选赛的Elgamal</title>
+    <link href="https://tover.xyz/p/2022-HWSwinter-Elgamal/"/>
+    <id>https://tover.xyz/p/2022-HWSwinter-Elgamal/</id>
+    <published>2022-01-25T04:31:42.000Z</published>
+    <updated>2022-01-25T11:24:02.034Z</updated>
+    
+    
+    <summary type="html">Elgamal使用线性相关的随机数，顺便AMM算法练手（</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="writeup" scheme="https://tover.xyz/tags/writeup/"/>
+    
+  </entry>
   
   <entry>
     <title>DeemoⅡ音频及MIDI提取</title>
