@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2021-11-24T09:04:30.174Z</updated>
+  <updated>2022-01-25T04:28:22.971Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>DeemoⅡ音频及MIDI提取</title>
+    <link href="https://tover.xyz/p/Deemo2-Song-MIDI/"/>
+    <id>https://tover.xyz/p/Deemo2-Song-MIDI/</id>
+    <published>2022-01-24T12:13:29.000Z</published>
+    <updated>2022-01-25T04:28:22.971Z</updated>
+    
+    
+    <summary type="html">很久之前写过了“Deemo提取MIDI”，现在DeemoⅡ出了，就来写写Ⅱ的音频和MIDI提取.</summary>
+    
+    
+    
+    
+    <category term="Python" scheme="https://tover.xyz/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>华南师范大学HSCTF2021部分Writeup（官方）</title>
