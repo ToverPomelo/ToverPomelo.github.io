@@ -1,0 +1,252 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>maiPad Plus的simai谱面制作 | Tover' Blog</title><meta name="keywords" content="Game"><meta name="author" content="Tover. L"><meta name="copyright" content="Tover. L"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="在家学打maimai，找到maiPad Plus这个应用（Android），但没有谱面，总结个打包谱面的方法.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="maiPad Plus的simai谱面制作">
+<meta property="og:url" content="https://tover.xyz/p/maiPad-simai/index.html">
+<meta property="og:site_name" content="Tover&#39; Blog">
+<meta property="og:description" content="在家学打maimai，找到maiPad Plus这个应用（Android），但没有谱面，总结个打包谱面的方法.">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://tover.xyz/img/icon.jpg">
+<meta property="article:published_time" content="2022-02-10T04:56:54.000Z">
+<meta property="article:modified_time" content="2022-02-10T06:33:53.738Z">
+<meta property="article:author" content="Tover. L">
+<meta property="article:tag" content="Game">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tover.xyz/img/icon.jpg"><link rel="shortcut icon" href="/img/icon.jpg"><link rel="canonical" href="https://tover.xyz/p/maiPad-simai/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":400},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'maiPad Plus的simai谱面制作',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-02-10 14:33:53'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Tover' Blog" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">35</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">13</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/icon.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Tover' Blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">maiPad Plus的simai谱面制作</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-02-10T04:56:54.000Z" title="发表于 2022-02-10 12:56:54">2022-02-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-02-10T06:33:53.738Z" title="更新于 2022-02-10 14:33:53">2022-02-10</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>10分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="maiPad Plus的simai谱面制作"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/p/maiPad-simai/#post-comment"><span class="gitalk-comment-count"></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>在家学打maimai，找到maiPad Plus这个应用（Android），但没有谱面，总结个打包谱面的方法.</p>
+<p>maiPad Plus可以直接在<a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.HinataMusic.maiPadPlus&amp;hl=zh&amp;gl=US">Google Play</a>上下载（不过需要点魔法，当然搜一下也可以找到apk），安装后里面只有一个谱面，按照官方的说明，谱面文件是<a target="_blank" rel="noopener" href="https://w.atwiki.jp/simai/">simai</a>的maidata.txt（「simai」で作成した「maidata.txt(必須)」），把谱面文件（maidata.txt）和音源（.mp3）、背景图（.jpg）或MV（.mp4）放在同一个文件夹（名字可以的是歌名）里即是一个完整的谱面。把文件夹放在手机（安卓）存储路径的<code>maiPadPLUS/score/</code>里即导入谱面完成（安装好maiPad Plus后会自动创建那个文件夹），详细也可以参考<a target="_blank" rel="noopener" href="https://forum.gamer.com.tw/C.php?bsn=21890&amp;snA=230">巴哈姆特上的一个教程</a>（可能也需要点魔法）。</p>
+<p>simai的谱面（含maimai的官方谱）可以在<a target="_blank" rel="noopener" href="https://w.atwiki.jp/simai/pages/32.html">某个wiki</a>上找到，比如我要找 Destr0yer 的谱面，就可以翻到<a href="(https://w.atwiki.jp/simai/pages/643.html)">这里</a>，</p>
+<img src="/p/maiPad-simai/1.JPG" class="" title="img_1">
+<p>MASTER下面的那一堆（像乱码的）就是谱面数据，说明了每个note要放在什么位置（具体可以看simai的语法），这里BASIC、ADVANCED和EXPERT下面都是空的即这三个难度的谱面还没人做；知道谱面数据后要做成maidata.txt还要解决<strong>两个问题</strong>，<strong>首先</strong>是maidata.txt的文件头怎么写，<a target="_blank" rel="noopener" href="https://forum.gamer.com.tw/C.php?bsn=21890&amp;snA=230">巴哈上的那个教程</a>其实也讲得挺清楚了，也可以参考下我做的头：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&amp;title=Destr0yer</span><br><span class="line">&amp;artist=</span><br><span class="line">&amp;first=10.68</span><br><span class="line">&amp;des=</span><br><span class="line">&amp;track=track.mp3</span><br><span class="line">&amp;lv_5=12+</span><br><span class="line">&amp;inote_5=(90)</span><br><span class="line">&#123;4&#125; Cf,,,4b/5b,</span><br><span class="line">... ...</span><br></pre></td></tr></table></figure>
+<p>用&amp;做开头的那些就是文件头，&amp;title即这个谱面的名字（歌名）、&amp;artist好像是作者、&amp;first是用来对准的，即第一个note开始的时间（这个后面再说）、&amp;track指定音源的名字（好像只要放在同一个文件夹的话这个可以忽略）、&amp;lv_5即MASTER等级（紫）的难度（显示在选歌界面的），同理：&amp;lv_1=EASY的等级（蓝），&amp;lv_2=BASIC的等级（绿），&amp;lv_3=ADVANCED的等级（黄），&amp;lv_4=EXPERT的等级（红）、&amp;inote_5后面就是接刚才说的谱面数据，同理：&amp;inote_1=EASY的谱面数据，&amp;inote_2=BASIC的谱面数据，… …</p>
+<p>如果嫌用文本编辑麻烦的话也可以使用一个叫<a target="_blank" rel="noopener" href="https://github.com/LingFeng-bbben/MajdataView">MajdataView</a>的工具（在github页面的release里下载，<a target="_blank" rel="noopener" href="http://xn--dw2at9x.NET">需要.NET</a>），直接用他的Editor来写，最大的框里填谱面数据，左面那些小框里填文件头的信息。</p>
+<img src="/p/maiPad-simai/2.JPG" class="" title="img_2">
+<p>因为可以播放，用MajdataView的话还可以很方便地校准偏移（&amp;first），校准偏移前记得首先要<strong>找对音源</strong>（毕竟同一首歌会有几个版本的- -），然后官方谱的话可以在B站搜“maimai谱面确认”来辅助校准。</p>
+<p><strong>第二个问题</strong>是，把上面的都做好后（以 Destr0yer 为例），直接放在maiPad Plus里运行会显示 ERROR ，</p>
+<img src="/p/maiPad-simai/3-16444737279591.jpg" class="" title="img_3">
+<p>原因是，（我猜的）现在simai的语法和maiPad用的语法不一样，比如下面的B、E和C的区域在maiPad里就不支持（谱面数据里带B或E或C的都是指对应区域上的note可以试一下即使写上去了在maiPad里也是不显示的）；然后还有<code>&lt;</code>和<code>&gt;</code>的语法也是不支持的（这个是报ERROR的主要原因）；另外三押及以上也不支持，如<code>E3/E7/Cfh[1:1]</code>（每个/分隔的note是同时显示的）。</p>
+<img src="/p/maiPad-simai/4.JPG" class="" title="img_4">
+<p>缓兵之计是：</p>
+<ol>
+<li>文本编辑器分别搜<code>x</code>、<code>B</code>和<code>E</code>（注意大小写），替换成空（注意每个&amp;inote后面是需要一个<code>E</code>来标记结束的，不要把这个也删掉）；当然可以根据个人喜好改，替换了会把E和B区的note转换到A区，如果不替换的话有可能会有一大段是空的；x（好像）是表示这个note显示为星星（不过maiPad不支持），不删的话有可能会和<code>-</code>冲突造成ERROR；</li>
+<li>文本编辑器分别搜索<code>&lt;</code>和<code>&gt;</code>，替换成<code>-</code>；</li>
+<li>文本编辑器搜索<code>/C</code>，遇到有<code>/</code>分隔了三个的就把最后的删掉（即最多剩下双押，其实有C的在maiPad里都不会显示的，但出现在三押的话会造成ERROR）。</li>
+</ol>
+<p>不知道maiPad PLUS会不会有后续更新（逃</p>
+<p>最后附一个修改后的 Destr0yer 谱面供参考</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br></pre></td><td class="code"><pre><span class="line">&amp;title=Destr0yer</span><br><span class="line">&amp;artist=</span><br><span class="line">&amp;first=10.65</span><br><span class="line">&amp;des=</span><br><span class="line">&amp;track=track.mp3</span><br><span class="line">&amp;lv_5=12+</span><br><span class="line">&amp;inote_5=(90)</span><br><span class="line">&#123;4&#125; Cf,,,4b/5b,</span><br><span class="line">&#123;16&#125; 2-5[8:1],,1,8,2,,7,,2-5[8:1],,1,8,2,,7,,7-4[8:1],,8,1,7,,2,,7-4[8:1],,8,1,7,,2,,</span><br><span class="line">3,3,4,2,6,6,5,7,3,3,4,2,12,18,,,6,6,5,7,3,3,4,2,6,6,5,7,78,18,,,</span><br><span class="line">7-4[8:1],,8,1,7,,2,,7-4[8:1],,8,1,7,,2,,2-5[8:1],,1,8,2,,7,,2-5[8:1],,1,8,2,,7,,</span><br><span class="line">2,2,4,3,7,7,5,6,2,2,4,3,34,45,,,5,5,4,6,4,4,5,3,6,6,5,7,4/7-2[4:3],4/7,,,</span><br><span class="line">&#123;1&#125; Ch[2:1],</span><br><span class="line">&#123;4&#125; 45,</span><br><span class="line">&#123;16&#125; 4h[8:3],,,6h[16:13],</span><br><span class="line">&#123;8&#125; ,,,4,5h[8:5],,</span><br><span class="line">&#123;16&#125; ,,,7h[16:3],</span><br><span class="line">&#123;4&#125; ,</span><br><span class="line">&#123;16&#125; 46,,5,4,</span><br><span class="line">&#123;4&#125; 3h[4:1]/5h[8:5],</span><br><span class="line">&#123;16&#125; ,,,4h[16:7],</span><br><span class="line">&#123;4&#125; ,</span><br><span class="line">&#123;16&#125; 6h[8:3],,,3h[16:3],</span><br><span class="line">&#123;4&#125; ,</span><br><span class="line">&#123;16&#125; 45,,7h[4:1],2h[16:3],</span><br><span class="line">&#123;4&#125; ,</span><br><span class="line">&#123;16&#125; 18,18,,,</span><br><span class="line">&#123;4&#125; 6h[4:1]/3h[8:5],</span><br><span class="line">&#123;16&#125; ,,5,4h[8:3],,</span><br><span class="line">&#123;4&#125; ,</span><br><span class="line">&#123;16&#125; 2,3,4,</span><br><span class="line">&#123;8&#125; 2h[16:3]/5h[4:1],,,</span><br><span class="line">&#123;16&#125; 4h[4:1],5,,,7,6,</span><br><span class="line">&#123;4&#125; 35,4/6V85[8:3],</span><br><span class="line">&#123;16&#125; 4,,,3,,,2,,2,,5,4,,35,,4,5,4,,46,,35,,5,4,45,,,</span><br><span class="line">&#123;4&#125; 8-4[4:1],4-8[4:1],</span><br><span class="line">&#123;16&#125; 2,,3,3,</span><br><span class="line">&#123;4&#125; 4,1-5[4:1],5-1[4:1],</span><br><span class="line">&#123;16&#125; 8,,7,6,</span><br><span class="line">&#123;4&#125; 5,8-4[4:1],4-8[4:1],</span><br><span class="line">&#123;16&#125; 2,,3,3,</span><br><span class="line">&#123;4&#125; 4,4h[4:1]/5h[4:1],</span><br><span class="line">&#123;16&#125; ,,4,5,4,4,5,4,,,45,,</span><br><span class="line">&#123;4&#125; 7-3[4:1],3-7[4:1],</span><br><span class="line">&#123;16&#125; 2,,1,C,</span><br><span class="line">&#123;4&#125; 5,2-6[4:1],6-2[4:1],</span><br><span class="line">&#123;16&#125; 8,,1,C,</span><br><span class="line">&#123;4&#125; 5,7qq5[4:1],5-3[8:3],1-5[4:1],4/5,</span><br><span class="line">&#123;1&#125; Cfh[1:1],</span><br><span class="line">&#123;4&#125; ,,,</span><br><span class="line">&#123;16&#125; 4h[4:1]/5,5,5,5,</span><br><span class="line">&#123;4&#125; 5qq5[4:1],5-2[4:1],,3h[4:1],</span><br><span class="line">&#123;8&#125; 6h[8:1],5h[8:1],4h[8:1],3,8h[4:1]/2-6[16:1],4,</span><br><span class="line">&#123;64&#125; ,2,Cf,6,</span><br><span class="line">&#123;16&#125; ,,,</span><br><span class="line">&#123;4&#125; 4pp4[4:1]/5,4-7[4:1],,5h[8:3],2h[8:1],4h[8:1]/7h[8:1],</span><br><span class="line">&#123;8&#125; 1-6[16:1]/2-6[16:1],8,</span><br><span class="line">&#123;64&#125; ,2,Cf,6,</span><br><span class="line">&#123;16&#125; ,,,</span><br><span class="line">&#123;4&#125; 4pp4[4:1]/5,4-7[4:1],,5h[4:1],</span><br><span class="line">&#123;8&#125; 2h[8:1],8h[8:1],3h[8:1],,1-5[16:1]/7-3[16:1],8,</span><br><span class="line">&#123;64&#125; 1b/7b,1/7,Cf,3/5,</span><br><span class="line">&#123;16&#125; ,,,</span><br><span class="line">&#123;8&#125; 18,27,36,,47,</span><br><span class="line">&#123;16&#125; 4-5[8:5],5,</span><br><span class="line">&#123;8&#125; 36,Ch[8:3],</span><br><span class="line">&#123;4&#125; ,,,</span><br><span class="line">&#123;16&#125; 3-5[16:1]/6-1[16:1],,5,2,36,,8,,3-8[16:1]/6-4[16:1],,4,7,36,,1,,</span><br><span class="line">3-5[16:1]/6-1[16:1],,5,,36,,8,,3-8[16:1]/6-4[16:1],,4,7,36,,1,,</span><br><span class="line">3-5[16:1]/6-1[16:1],,5,2,</span><br><span class="line">&#123;4&#125; 3/6,</span><br><span class="line">&#123;16&#125; 3h[4:1]/6,,5,5,6h[4:1],4,,4,3h[4:1],5,5,,</span><br><span class="line">&#123;32&#125; 8,8,1,2,4,4,5,6,1,8,7,7,3,3,4,5,8,7,6,6,2,2,3,4,</span><br><span class="line">&#123;16&#125; Cf,,2/7,2/7,2/7,,45,,3-5[16:1]/6-1[16:1],,5,2,36,,8,8,</span><br><span class="line">3-8[16:1]/6-4[16:1],,4,7,36,,1,1,3-5[16:1]/6-1[16:1],,5,2,36,,8,8,</span><br><span class="line">&#123;8&#125; 4/7s3[2:1],56,</span><br><span class="line">&#123;4&#125; 4h[2:1]/7b,,,4z8[2:1],3h[2:1],,,45,</span><br><span class="line">&#123;2&#125; 1,2/8,</span><br><span class="line">&#123;4&#125; 3/7,,,,,,,4/5,</span><br><span class="line">&#123;16&#125; 2-5[16:1]/6,,1,7,26,,8,,2-5[16:1]/6,,1,7,26,,8,,</span><br><span class="line">7-4[16:1]/3,,8,2,37,,1,,7-4[16:1]/3,,8,2,37,,1,,</span><br><span class="line">3h[4:1]/4,,5,6,7h[4:1],,8,1,2h[4:1],,1,8,7,,36,,6h[4:1]/5,,4,3,2h[4:1],,1,8,7h[4:1],,8,1,2,,4/5,,</span><br><span class="line">&#123;32&#125; 4,3,2,2,8,7,6,6,3,2,1,1,7,6,5,5,2,1,8,8,6,5,4,4,</span><br><span class="line">&#123;4&#125; Cf,</span><br><span class="line">&#123;32&#125; 6,6,7,8,2,2,3,4,7,7,8,1,3,3,4,5,8,8,1,2,4,4,5,6,</span><br><span class="line">&#123;4&#125; Cf,</span><br><span class="line">&#123;16&#125; 2-5[16:1]/5,,3,4,2/7-4[16:1],,6,5,2-5[16:1]/7,,3,4,2/7-4[16:1],,6,5,</span><br><span class="line">1-5[16:1]/7,,2,4,8-4[16:1]/1,,7,5,1-5[16:1]/8,,2,4,1/8-1[2:1],,7,5,</span><br><span class="line">&#123;4&#125; 2h[2:1]/8,,,1s5[2:1],6h[2:1],,,4h[1:1],5h[16:31],,,,Ch[16:15],,,,,,,,,,,,,,,</span><br><span class="line">E</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Tover. L</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://tover.xyz/p/maiPad-simai/">https://tover.xyz/p/maiPad-simai/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://tover.xyz" target="_blank">Tover' Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Game/">Game</a></div><div class="post_share"><div class="social-share" data-image="/img/icon.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/p/2022-HWSwinter-Elgamal/"><img class="next-cover" src="/img/icon.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">2022HWS冬令营预选赛的Elgamal</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Tover. L</div><div class="author-info__description">二进制是密码学人的自我修养 =v=</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">35</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">13</div></a></div></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/ToverPomelo" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:q664514882@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">/</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/p/maiPad-simai/" title="maiPad Plus的simai谱面制作"><img src="/img/icon.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="maiPad Plus的simai谱面制作"/></a><div class="content"><a class="title" href="/p/maiPad-simai/" title="maiPad Plus的simai谱面制作">maiPad Plus的simai谱面制作</a><time datetime="2022-02-10T04:56:54.000Z" title="发表于 2022-02-10 12:56:54">2022-02-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/p/2022-HWSwinter-Elgamal/" title="2022HWS冬令营预选赛的Elgamal"><img src="/img/icon.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022HWS冬令营预选赛的Elgamal"/></a><div class="content"><a class="title" href="/p/2022-HWSwinter-Elgamal/" title="2022HWS冬令营预选赛的Elgamal">2022HWS冬令营预选赛的Elgamal</a><time datetime="2022-01-25T04:31:42.000Z" title="发表于 2022-01-25 12:31:42">2022-01-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/p/Deemo2-Song-MIDI/" title="DeemoⅡ音频及MIDI提取"><img src="/img/icon.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="DeemoⅡ音频及MIDI提取"/></a><div class="content"><a class="title" href="/p/Deemo2-Song-MIDI/" title="DeemoⅡ音频及MIDI提取">DeemoⅡ音频及MIDI提取</a><time datetime="2022-01-24T12:13:29.000Z" title="发表于 2022-01-24 20:13:29">2022-01-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/p/hsctf-2021-fresh-wp/" title="华南师范大学HSCTF2021部分Writeup（官方）"><img src="/img/icon.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="华南师范大学HSCTF2021部分Writeup（官方）"/></a><div class="content"><a class="title" href="/p/hsctf-2021-fresh-wp/" title="华南师范大学HSCTF2021部分Writeup（官方）">华南师范大学HSCTF2021部分Writeup（官方）</a><time datetime="2021-11-24T07:09:58.000Z" title="发表于 2021-11-24 15:09:58">2021-11-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/p/aircrack-ng-wifi/" title="aircrack-ng+hashcat的wifi口令爆破"><img src="/img/icon.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="aircrack-ng+hashcat的wifi口令爆破"/></a><div class="content"><a class="title" href="/p/aircrack-ng-wifi/" title="aircrack-ng+hashcat的wifi口令爆破">aircrack-ng+hashcat的wifi口令爆破</a><time datetime="2021-11-08T01:26:51.000Z" title="发表于 2021-11-08 09:26:51">2021-11-08</time></div></div></div></div></div></div></main><footer id="footer" style="background: linear-gradient(6.6deg, #0042bebb, #8e5690bb, #18466ebb, #000347bb)"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2022 By Tover. L</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><a target="_blank" rel="noopener" href="https://c10udlnk.top/">二进制是密码学人的自我修养 =v=</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
+
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: '4989f2182ba1c60d6a7a',
+      clientSecret: '80988778d911dff7e85489411dde0cce80d72e83',
+      repo: 'ToverPomelo.github.io',
+      owner: 'ToverPomelo',
+      admin: ['ToverPomelo'],
+      id: 'f3225e83f2e3a9eae3041c6a2dd87481',
+      language: 'zh-CN',
+      perPage: 10,
+      distractionFreeMode: false,
+      pagerDirection: 'last',
+      createIssueManually: true,
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    getScript('https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !false) {
+  if (false) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start -->
+    <div class="myspine-spine-widget"></div>
+    <script src="/js/myspine/spine-widget.js"></script>
+    <script src="/js/myspine/spine-skeleton-binary.js"></script>
+    <script src="/js/myspine/myspine.js"></script>
+    <link type="text/css" href="/css/_third-party/myspine.css"></link>
+    <script>
+        new MySpine({
+            spineDir: "/spine_models/",
+            models: [{"name":"sd_21miku_normal_r/","skin":"default","atlas":"sekai_atlas.atlas","skeleton":"sekai_atlas.skel"},{"name":"sd_21miku_band_r/","skin":"default","atlas":"sekai_atlas.atlas","skeleton":"sekai_atlas.skel"},{"name":"sd_21miku_idol_r/","skin":"default","atlas":"sekai_atlas.atlas","skeleton":"sekai_atlas.skel"},{"name":"sd_21miku_night_r/","skin":"default","atlas":"sekai_atlas.atlas","skeleton":"sekai_atlas.skel"},{"name":"sd_21miku_street_r/","skin":"default","atlas":"sekai_atlas.atlas","skeleton":"sekai_atlas.skel"},{"name":"sd_21miku_wonder_r/","skin":"default","atlas":"sekai_atlas.atlas","skeleton":"sekai_atlas.skel"}],
+            styles: {"widget":{"width":"200px","height":"200px"},"voiceText":{"color":"#e6e6e6"}},
+            behaviors: {"start":{"animation":"w_emu_run01_f","voice":"","text":"Ohhhhh好耶"},"idle":{"maxMinutes":1,"animations":[{"name":"m_cool_idle01_f","loop":false},{"name":"m_cool_joy01_f","loop":false},{"name":"m_happy_idle01_f","loop":false},{"name":"m_happy_joy01_f","loop":false},{"name":"m_normal_idle01_f","loop":false},{"name":"m_normal_joy01_f","loop":false},{"name":"m_staff_idle01_f","loop":false},{"name":"n_general_wait_01_f","loop":false},{"name":"pose_default","loop":false},{"name":"u_vbsmen_battledore00_f","loop":false},{"name":"u_vbswomen_battledore00_f","loop":false},{"name":"w_adult_idle01_f","loop":false},{"name":"w_adult_joy01_f","loop":false},{"name":"w_cool_idle01_f","loop":false},{"name":"w_cool_joy01_f","loop":false},{"name":"w_cute_idle01_f","loop":false},{"name":"w_cute_joy01_f","loop":false},{"name":"w_happy_idle01_f","loop":false},{"name":"w_happy_joy01_f","loop":false},{"name":"w_normal_idle01_f","loop":false},{"name":"w_normal_joy01_f","loop":false},{"name":"w_pure_idle01_f","loop":false},{"name":"w_pure_joy01_f","loop":false},{"name":"w_staff_idle01_f","loop":false}],"voices":[{"voice":"","text":"不买立省百分百"}]},"interact":{"maxPlaySec":3,"animations":[{"name":"w_normal_joy01_b","loop":false},{"name":"m_cool_angry01_f","loop":false},{"name":"m_cool_doubt01_f","loop":false},{"name":"m_cool_laugh01_f","loop":false},{"name":"m_cool_listen01_f","loop":false},{"name":"m_cool_sad01_f","loop":false},{"name":"m_cool_surprise01_f","loop":false},{"name":"m_cool_talk01_f","loop":false},{"name":"m_happy_angry01_f","loop":false},{"name":"m_happy_doubt01_f","loop":false},{"name":"m_happy_laugh01_f","loop":false},{"name":"m_happy_listen01_f","loop":false},{"name":"m_happy_sad01_f","loop":false},{"name":"m_happy_surprise01_f","loop":false},{"name":"m_happy_talk01_f","loop":false},{"name":"m_normal_angry01_f","loop":false},{"name":"m_normal_doubt01_f","loop":false},{"name":"m_normal_laugh01_f","loop":false},{"name":"m_normal_listen01_f","loop":false},{"name":"m_normal_surprise01_f","loop":false},{"name":"m_normal_talk01_f","loop":false},{"name":"m_normal_walk01_b","loop":false},{"name":"m_normal_walk01_f","loop":false},{"name":"m_tsukasa_run01_f","loop":false},{"name":"n_general_walk_01_b","loop":false},{"name":"n_general_walk_01_f","loop":false},{"name":"u_liondancerobot_run_01_f","loop":false},{"name":"u_liondancerobot_run_02_f","loop":false},{"name":"u_vbsmen_battledore01_f","loop":false},{"name":"u_vbsmen_battledore02_f","loop":false},{"name":"u_vbsmen_battledore03_f","loop":false},{"name":"u_vbsmen_battledore04_f","loop":false},{"name":"u_vbswomen_battledore01_f","loop":false},{"name":"u_vbswomen_battledore02_f","loop":false},{"name":"u_vbswomen_battledore03_f","loop":false},{"name":"u_vbswomen_battledore04_f","loop":false},{"name":"w_adult_angry01_f","loop":false},{"name":"w_adult_doubt01_f","loop":false},{"name":"w_adult_laugh01_f","loop":false},{"name":"w_adult_listen01_f","loop":false},{"name":"w_adult_sad01_f","loop":false},{"name":"w_adult_surprise01_f","loop":false},{"name":"w_adult_talk01_f","loop":false},{"name":"w_cool_angry01_f","loop":false},{"name":"w_cool_doubt01_f","loop":false},{"name":"w_cool_laugh01_f","loop":false},{"name":"w_cool_listen01_f","loop":false},{"name":"w_cool_sad01_f","loop":false},{"name":"w_cool_surprise01_f","loop":false},{"name":"w_cool_talk01_f","loop":false},{"name":"w_cute_angry01_f","loop":false},{"name":"w_cute_angry02_f","loop":false},{"name":"w_cute_doubt01_f","loop":false},{"name":"w_cute_laugh01_f","loop":false},{"name":"w_cute_listen01_f","loop":false},{"name":"w_cute_sad01_f","loop":false},{"name":"w_cute_surprise01_f","loop":false},{"name":"w_cute_talk01_f","loop":false},{"name":"w_emu_run02_f","loop":false},{"name":"w_happy_angry01_f","loop":false},{"name":"w_happy_angry02_f","loop":false},{"name":"w_happy_doubt01_f","loop":false},{"name":"w_happy_doubt02_f","loop":false},{"name":"w_happy_laugh01_f","loop":false},{"name":"w_happy_listen01_f","loop":false},{"name":"w_happy_sad01_f","loop":false},{"name":"w_happy_surprise01_f","loop":false},{"name":"w_happy_talk01_f","loop":false},{"name":"w_normal_laugh01_f","loop":false},{"name":"w_normal_listen01_f","loop":false},{"name":"w_normal_talk01_f","loop":false},{"name":"w_normal_walk01_b","loop":false},{"name":"w_normal_walk01_f","loop":false},{"name":"w_pure_angry01_f","loop":false},{"name":"w_pure_doubt01_f","loop":false},{"name":"w_pure_laugh01_f","loop":false},{"name":"w_pure_listen01_f","loop":false},{"name":"w_pure_sad01_f","loop":false},{"name":"w_pure_surprise01_f","loop":false},{"name":"w_pure_talk01_f","loop":false},{"name":"z_mesh_templete","loop":false},{"name":"z_test_F_negi01","loop":false}],"voices":[{"voice":"","text":"既见未来，为何不buy"}]}}
+        });
+    </script>
+    <!-- hexo injector body_end end --></body></html>
