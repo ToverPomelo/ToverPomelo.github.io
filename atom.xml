@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2022-02-10T15:31:30.944Z</updated>
+  <updated>2022-02-28T12:56:08.683Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2022 SUSCTF的两道半密码题WP</title>
+    <link href="https://tover.xyz/p/2022-SUSCTF-Crypto/"/>
+    <id>https://tover.xyz/p/2022-SUSCTF-Crypto/</id>
+    <published>2022-03-01T11:09:36.000Z</published>
+    <updated>2022-02-28T12:56:08.683Z</updated>
+    
+    
+    <summary type="html">做了两道，SpeicalCurve解了1/3，不会椭圆曲线-</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="writeup" scheme="https://tover.xyz/tags/writeup/"/>
+    
+  </entry>
   
   <entry>
     <title>maiPad Plus的simai谱面制作</title>
