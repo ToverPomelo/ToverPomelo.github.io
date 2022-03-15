@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2022-03-15T11:59:58.497Z</updated>
+  <updated>2022-03-15T12:07:59.767Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -17,14 +17,14 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>d3factor与Coppersmith学习笔记</title>
+    <title>d3factor/Boneh-Durfee与Coppersmith学习笔记</title>
     <link href="https://tover.xyz/p/d3factor-coppersmith/"/>
     <id>https://tover.xyz/p/d3factor-coppersmith/</id>
     <published>2022-03-13T01:35:59.000Z</published>
-    <updated>2022-03-15T11:59:58.497Z</updated>
+    <updated>2022-03-15T12:07:59.767Z</updated>
     
     
-    <summary type="html">2022 D3CTF 的d3factor，顺便用来学习一元（univariate）的Coppersmith方法，然后尽量讲一下二元（bivariate）的方法（菜</summary>
+    <summary type="html">2022 D3CTF 的d3factor，顺便用来学习一元（univariate）的Coppersmith方法；然后参考了Boneh-Durfee对RSA的攻击尽量讲一下二元（bivariate）的方法（菜</summary>
     
     
     
