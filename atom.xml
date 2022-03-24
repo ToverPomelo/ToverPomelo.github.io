@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2022-03-17T09:32:43.713Z</updated>
+  <updated>2022-03-24T03:05:53.267Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2022HFCTF的RRSSAA笔记</title>
+    <link href="https://tover.xyz/p/2022-HFCTF-RRSSAA/"/>
+    <id>https://tover.xyz/p/2022-HFCTF-RRSSAA/</id>
+    <published>2022-03-22T08:56:37.000Z</published>
+    <updated>2022-03-24T03:05:53.267Z</updated>
+    
+    
+    <summary type="html">解方程、解方程和解方程，反正我当时是没找到论文然后就一直在推解密方法，感觉有非预期-</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="writeup" scheme="https://tover.xyz/tags/writeup/"/>
+    
+  </entry>
   
   <entry>
     <title>d3factor/Boneh-Durfee与Coppersmith学习笔记</title>
