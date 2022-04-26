@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2022-03-24T03:05:53.267Z</updated>
+  <updated>2022-04-26T11:51:18.404Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2022 MRCTF的strange_classic</title>
+    <link href="https://tover.xyz/p/2022-MRCTF-strange-classic/"/>
+    <id>https://tover.xyz/p/2022-MRCTF-strange-classic/</id>
+    <published>2022-04-26T07:20:44.000Z</published>
+    <updated>2022-04-26T11:51:18.404Z</updated>
+    
+    
+    <summary type="html">看似古典Enigma Machine，实则大一线性代数（x）. 有幸全场唯一解（*★,°*:.☆(￣▽￣)/$:*.°★* 。</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="writeup" scheme="https://tover.xyz/tags/writeup/"/>
+    
+  </entry>
   
   <entry>
     <title>2022HFCTF的RRSSAA笔记</title>
