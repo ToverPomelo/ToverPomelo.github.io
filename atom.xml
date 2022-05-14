@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2022-04-26T11:51:18.404Z</updated>
+  <updated>2022-05-14T12:20:14.095Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>承诺方案（Commitment）学习笔记 1</title>
+    <link href="https://tover.xyz/p/commitment-note/"/>
+    <id>https://tover.xyz/p/commitment-note/</id>
+    <published>2022-05-10T06:58:57.000Z</published>
+    <updated>2022-05-14T12:20:14.095Z</updated>
+    
+    
+    <summary type="html">最近在搞的Commitment，卡壳了，写个笔记整理下思路.</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+  </entry>
   
   <entry>
     <title>2022 MRCTF的strange_classic</title>
