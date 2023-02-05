@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2023-02-05T13:52:34.233Z</updated>
+  <updated>2023-02-05T13:56:01.626Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>博客Butterfly的CDN更换LOG</title>
+    <title>博客Butterfly主题的CDN更换记录</title>
     <link href="https://tover.xyz/p/butterfly-cdn-changed/"/>
     <id>https://tover.xyz/p/butterfly-cdn-changed/</id>
     <published>2023-02-05T13:35:28.000Z</published>
-    <updated>2023-02-05T13:52:34.233Z</updated>
+    <updated>2023-02-05T13:56:01.626Z</updated>
     
     
     <summary type="html">由于某些不可抗力因素jsdelivr可能无法在国内访问，所以更换了CDN.</summary>
