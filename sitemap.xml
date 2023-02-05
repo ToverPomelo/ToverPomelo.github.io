@@ -2,7 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tover.xyz/p/butterfly-cdn-changed/</loc>
+    
+    <lastmod>2023-02-05</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tover.xyz/p/OU98/</loc>
+    
+    <lastmod>2023-02-05</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tover.xyz/p/hello-world/</loc>
     
     <lastmod>2023-02-05</lastmod>
     
@@ -338,13 +352,6 @@
   </url>
   
   <url>
-    <loc>https://tover.xyz/p/hello-world/</loc>
-    
-    <lastmod>2021-09-14</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://tover.xyz/link/index.html</loc>
     
     <lastmod>2021-09-14</lastmod>
@@ -389,6 +396,13 @@
   </url>
   
   <url>
+    <loc>https://tover.xyz/tags/Python/</loc>
+    <lastmod>2023-02-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://tover.xyz/tags/PWN/</loc>
     <lastmod>2023-02-05</lastmod>
     <changefreq>daily</changefreq>
@@ -417,13 +431,6 @@
   </url>
   
   <url>
-    <loc>https://tover.xyz/tags/Python/</loc>
-    <lastmod>2023-02-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://tover.xyz/tags/C-C/</loc>
     <lastmod>2023-02-05</lastmod>
     <changefreq>daily</changefreq>
@@ -438,6 +445,13 @@
   </url>
   
   <url>
+    <loc>https://tover.xyz/tags/Game/</loc>
+    <lastmod>2023-02-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://tover.xyz/tags/ML/</loc>
     <lastmod>2023-02-05</lastmod>
     <changefreq>daily</changefreq>
@@ -446,13 +460,6 @@
   
   <url>
     <loc>https://tover.xyz/tags/Web/</loc>
-    <lastmod>2023-02-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://tover.xyz/tags/Game/</loc>
     <lastmod>2023-02-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
