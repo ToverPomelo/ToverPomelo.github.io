@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2023-02-04T08:02:48.231Z</updated>
+  <updated>2023-02-05T09:54:30.679Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Okamoto-Uchiyama加密方案学习笔记</title>
+    <link href="https://tover.xyz/p/OU98/"/>
+    <id>https://tover.xyz/p/OU98/</id>
+    <published>2023-02-05T07:12:11.000Z</published>
+    <updated>2023-02-05T09:54:30.679Z</updated>
+    
+    
+    <summary type="html">一个拥有很好用的同态性质的加密方案，文章：A New Public-Key Cryptosystem as Secure as Factoring.</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="writeup" scheme="https://tover.xyz/tags/writeup/"/>
+    
+  </entry>
   
   <entry>
     <title>2023西湖论剑部分密码题Writeup</title>
@@ -547,11 +566,26 @@
   </entry>
   
   <entry>
+    <title>Hello World</title>
+    <link href="https://tover.xyz/p/hello-world/"/>
+    <id>https://tover.xyz/p/hello-world/</id>
+    <published>2021-09-12T09:00:40.000Z</published>
+    <updated>2021-09-14T11:30:31.709Z</updated>
+    
+    
+    <summary type="html">Hello World ~</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>用格解LWE——笔记</title>
     <link href="https://tover.xyz/p/lattices-LWE/"/>
     <id>https://tover.xyz/p/lattices-LWE/</id>
-    <published>2021-09-14T03:13:50.000Z</published>
-    <updated>2021-09-14T11:29:14.423Z</updated>
+    <published>2021-08-27T03:13:50.000Z</published>
+    <updated>2023-02-05T07:07:53.966Z</updated>
     
     
     <summary type="html">接上篇继续讨论格密码的攻击，这次是解LWE（CVP问题）</summary>
@@ -569,8 +603,8 @@
     <title>Wiener&#39;s v.s Lattices —— Ax≡y(mod P)的方程解法笔记</title>
     <link href="https://tover.xyz/p/wieners-lattices-equations/"/>
     <id>https://tover.xyz/p/wieners-lattices-equations/</id>
-    <published>2021-09-14T03:00:59.000Z</published>
-    <updated>2021-10-21T00:42:25.802Z</updated>
+    <published>2021-08-25T03:00:59.000Z</published>
+    <updated>2023-02-05T07:06:53.286Z</updated>
     
     
     <summary type="html">最近做回以前的题，补了一下Wiener攻击和格攻击的方法，发现在解某些问题（简单的同余方程，如整数版本的NTRU）上是有共通之处的，所以就“顺便”做了下笔记。（个人偏向于用格的方法，所以在格方面的笔记会较多</summary>
@@ -588,8 +622,8 @@
     <title>Sage生成超超超大素数</title>
     <link href="https://tover.xyz/p/sage-huge-prime/"/>
     <id>https://tover.xyz/p/sage-huge-prime/</id>
-    <published>2021-09-14T02:55:15.000Z</published>
-    <updated>2021-09-14T11:29:41.405Z</updated>
+    <published>2021-07-24T02:55:15.000Z</published>
+    <updated>2023-02-05T07:05:18.586Z</updated>
     
     
     <summary type="html">Sage中加快next_prime和random_prime运算速度的方法，及代码溯源</summary>
@@ -605,8 +639,8 @@
     <title>🍎🍌🍍</title>
     <link href="https://tover.xyz/p/cubic/"/>
     <id>https://tover.xyz/p/cubic/</id>
-    <published>2021-09-14T02:20:21.000Z</published>
-    <updated>2021-09-14T11:28:52.095Z</updated>
+    <published>2021-04-04T02:20:21.000Z</published>
+    <updated>2023-02-05T07:04:02.416Z</updated>
     
     
     <summary type="html">hfctf的cubic的writeup，理论 + Sage脚本解法</summary>
@@ -624,8 +658,8 @@
     <title>【摸鱼】写下爬虫</title>
     <link href="https://tover.xyz/p/spider/"/>
     <id>https://tover.xyz/p/spider/</id>
-    <published>2021-09-13T14:06:01.000Z</published>
-    <updated>2021-09-14T11:29:57.675Z</updated>
+    <published>2020-06-13T14:06:01.000Z</published>
+    <updated>2023-02-05T07:02:02.345Z</updated>
     
     
     <summary type="html">如题，扒“一人之下”的时候踩的坑（当然，不是官网的..）</summary>
@@ -641,8 +675,8 @@
     <title>∫[sec(x)]^n dx</title>
     <link href="https://tover.xyz/p/sec-x-n-dx/"/>
     <id>https://tover.xyz/p/sec-x-n-dx/</id>
-    <published>2021-09-13T13:43:03.000Z</published>
-    <updated>2021-09-14T11:29:47.893Z</updated>
+    <published>2020-06-06T13:43:03.000Z</published>
+    <updated>2023-02-05T07:01:02.571Z</updated>
     
     
     <summary type="html">高数杀我</summary>
@@ -658,8 +692,8 @@
     <title>水一水GDB调试器的用法（入门+进阶）</title>
     <link href="https://tover.xyz/p/about-gdb/"/>
     <id>https://tover.xyz/p/about-gdb/</id>
-    <published>2021-09-13T13:31:44.000Z</published>
-    <updated>2021-09-14T11:28:22.682Z</updated>
+    <published>2020-03-04T13:31:44.000Z</published>
+    <updated>2023-02-05T07:00:05.057Z</updated>
     
     
     <summary type="html">水一下GDB的基本用法</summary>
@@ -675,8 +709,8 @@
     <title>关于C++更换标准库</title>
     <link href="https://tover.xyz/p/cpp-libc-change/"/>
     <id>https://tover.xyz/p/cpp-libc-change/</id>
-    <published>2021-09-13T13:24:14.000Z</published>
-    <updated>2021-09-14T11:28:44.259Z</updated>
+    <published>2020-03-02T13:24:14.000Z</published>
+    <updated>2023-02-05T06:58:26.115Z</updated>
     
     
     <summary type="html">对之前“编译带debug_info的glibc”的补充，讲一下C++如何换库</summary>
@@ -692,8 +726,8 @@
     <title>基于PyTorch实现学校sso免验证码登录</title>
     <link href="https://tover.xyz/p/pytorch-sso-login/"/>
     <id>https://tover.xyz/p/pytorch-sso-login/</id>
-    <published>2021-09-13T13:15:13.000Z</published>
-    <updated>2021-09-14T11:29:35.152Z</updated>
+    <published>2020-02-19T13:15:13.000Z</published>
+    <updated>2023-02-05T06:56:44.147Z</updated>
     
     
     <summary type="html">想怼个自动疫情打卡的脚本，但打卡的时候每次都要登录sso，于是又搞了个自动识别验证码 + 自动登录sso的工具</summary>
@@ -711,8 +745,8 @@
     <title>Deemo提取MIDI</title>
     <link href="https://tover.xyz/p/deemo-midi/"/>
     <id>https://tover.xyz/p/deemo-midi/</id>
-    <published>2021-09-12T14:14:42.000Z</published>
-    <updated>2021-09-14T11:28:58.301Z</updated>
+    <published>2020-02-14T14:14:42.000Z</published>
+    <updated>2023-02-05T06:55:33.084Z</updated>
     
     
     <summary type="html">AssetStudio提取Unity Asset + Python脚本提取MIDI（根据Deemo里提供的json文件）</summary>
@@ -728,8 +762,8 @@
     <title>Android破解进阶之：元气骑士</title>
     <link href="https://tover.xyz/p/android-yuanqi/"/>
     <id>https://tover.xyz/p/android-yuanqi/</id>
-    <published>2021-09-12T14:07:54.000Z</published>
-    <updated>2021-09-14T11:28:39.778Z</updated>
+    <published>2020-02-05T14:07:54.000Z</published>
+    <updated>2023-02-05T06:52:39.527Z</updated>
     
     
     <summary type="html">接上篇继续讨论安卓应用的逆向/破解，这次用“元气骑士”为例</summary>
@@ -745,8 +779,8 @@
     <title>Android破解初探之：Synthesia</title>
     <link href="https://tover.xyz/p/android-synthesia/"/>
     <id>https://tover.xyz/p/android-synthesia/</id>
-    <published>2021-09-12T14:00:58.000Z</published>
-    <updated>2021-09-14T11:28:29.101Z</updated>
+    <published>2020-02-03T14:00:58.000Z</published>
+    <updated>2023-02-05T06:48:09.035Z</updated>
     
     
     <summary type="html">用Synthesia入门了一下安卓应用的逆向/破解</summary>
@@ -762,8 +796,8 @@
     <title>pwnable.tw部分writeup(不定期更新)_Vol.2</title>
     <link href="https://tover.xyz/p/pwnable-tw-writeup-v2/"/>
     <id>https://tover.xyz/p/pwnable-tw-writeup-v2/</id>
-    <published>2021-09-12T13:30:47.000Z</published>
-    <updated>2021-09-14T11:29:30.292Z</updated>
+    <published>2020-01-16T13:30:47.000Z</published>
+    <updated>2023-02-05T06:46:01.966Z</updated>
     
     
     <summary type="html">如题，上一篇太长了，所以再开一篇分开写</summary>
@@ -779,8 +813,8 @@
     <title>内核PWN入坑指南</title>
     <link href="https://tover.xyz/p/kernel-pwn/"/>
     <id>https://tover.xyz/p/kernel-pwn/</id>
-    <published>2021-09-12T13:23:21.000Z</published>
-    <updated>2021-09-14T11:29:08.450Z</updated>
+    <published>2019-11-19T13:23:21.000Z</published>
+    <updated>2023-02-05T06:45:20.014Z</updated>
     
     
     <summary type="html">Kernel PWN的入门笔记，2018的强网杯core为例</summary>
@@ -798,8 +832,8 @@
     <title>pwnable.tw部分writeup(不定期更新)</title>
     <link href="https://tover.xyz/p/pwnable-tw-writeup/"/>
     <id>https://tover.xyz/p/pwnable-tw-writeup/</id>
-    <published>2021-09-12T12:53:35.000Z</published>
-    <updated>2021-09-14T11:29:25.098Z</updated>
+    <published>2019-10-29T12:53:35.000Z</published>
+    <updated>2023-02-05T06:43:47.245Z</updated>
     
     
     <summary type="html">如题</summary>
@@ -815,8 +849,8 @@
     <title>【科普】 那些放在不同位置的字符串</title>
     <link href="https://tover.xyz/p/strings-and-memory/"/>
     <id>https://tover.xyz/p/strings-and-memory/</id>
-    <published>2021-09-12T12:41:22.000Z</published>
-    <updated>2021-09-14T11:30:07.209Z</updated>
+    <published>2019-10-20T12:41:22.000Z</published>
+    <updated>2023-02-05T06:43:01.915Z</updated>
     
     
     <summary type="html">水一下堆和栈的区别</summary>
@@ -832,8 +866,8 @@
     <title>shellcode与shellcode生成</title>
     <link href="https://tover.xyz/p/shellcode/"/>
     <id>https://tover.xyz/p/shellcode/</id>
-    <published>2021-09-12T12:35:01.000Z</published>
-    <updated>2021-09-14T11:29:52.507Z</updated>
+    <published>2019-09-03T12:35:01.000Z</published>
+    <updated>2023-02-05T06:41:21.895Z</updated>
     
     
     <summary type="html">如题，发现msfvenom还是挺好用的（虽然还是手写最香</summary>
@@ -849,8 +883,8 @@
     <title>编译带debug_info的glibc</title>
     <link href="https://tover.xyz/p/libc-compile/"/>
     <id>https://tover.xyz/p/libc-compile/</id>
-    <published>2021-09-12T10:43:53.000Z</published>
-    <updated>2021-09-14T11:29:19.994Z</updated>
+    <published>2019-08-21T10:43:53.000Z</published>
+    <updated>2023-02-05T06:40:18.052Z</updated>
     
     
     <summary type="html">编译不同版本的带调试信息的libc，以及在运行时、pwntools脚本、GDB中更换不同的libc库的方法介绍</summary>
@@ -868,8 +902,8 @@
     <title>srand 源码分析（非专业）</title>
     <link href="https://tover.xyz/p/srand-source/"/>
     <id>https://tover.xyz/p/srand-source/</id>
-    <published>2021-09-12T09:27:40.000Z</published>
-    <updated>2021-09-14T11:30:02.527Z</updated>
+    <published>2019-04-03T09:27:40.000Z</published>
+    <updated>2023-02-05T06:38:53.164Z</updated>
     
     
     <summary type="html">如题（补充：这应该是大二的时候写的了，分析的不太好请见谅）</summary>
@@ -878,21 +912,6 @@
     
     
     <category term="C/C++" scheme="https://tover.xyz/tags/C-C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://tover.xyz/p/hello-world/"/>
-    <id>https://tover.xyz/p/hello-world/</id>
-    <published>2021-09-12T09:00:40.000Z</published>
-    <updated>2021-09-14T11:30:31.709Z</updated>
-    
-    
-    <summary type="html">Hello World ~</summary>
-    
-    
-    
     
   </entry>
   
