@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2023-04-26T15:05:12.067Z</updated>
+  <updated>2023-04-26T15:12:27.447Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://tover.xyz/p/2023-qwb-Crypto/"/>
     <id>https://tover.xyz/p/2023-qwb-Crypto/</id>
     <published>2023-04-26T12:54:05.000Z</published>
-    <updated>2023-04-26T15:05:12.067Z</updated>
+    <updated>2023-04-26T15:12:27.447Z</updated>
     
     
     <summary type="html">第一届（2022）强网杯密码数学专项赛，赛题一RSA 公钥密码体制的攻击的WP.</summary>
@@ -112,7 +112,7 @@
     <link href="https://tover.xyz/p/HSNCTF-2023-Winter-Crypto/"/>
     <id>https://tover.xyz/p/HSNCTF-2023-Winter-Crypto/</id>
     <published>2023-01-13T02:45:57.000Z</published>
-    <updated>2023-02-04T03:36:11.986Z</updated>
+    <updated>2023-04-26T15:10:37.738Z</updated>
     
     
     <summary type="html">总的来说题目难度并不大，有一半是古典密码，而且总体没用到啥公钥密码的知识，对新手很友好（逃</summary>
