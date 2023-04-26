@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2023-02-09T06:50:41.769Z</updated>
+  <updated>2023-04-25T09:24:00.138Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://tover.xyz/p/NTRU/"/>
     <id>https://tover.xyz/p/NTRU/</id>
     <published>2023-02-07T07:11:26.000Z</published>
-    <updated>2023-02-09T06:50:41.769Z</updated>
+    <updated>2023-04-25T09:24:00.138Z</updated>
     
     
     <summary type="html">如题，理论、代码和漏洞利用.</summary>
@@ -55,7 +55,7 @@
     <link href="https://tover.xyz/p/OU98/"/>
     <id>https://tover.xyz/p/OU98/</id>
     <published>2023-02-05T07:12:11.000Z</published>
-    <updated>2023-04-04T02:53:18.384Z</updated>
+    <updated>2023-04-04T02:59:57.495Z</updated>
     
     
     <summary type="html">一个拥有很好用的同态性质的加密方案，文章：A New Public-Key Cryptosystem as Secure as Factoring.</summary>
