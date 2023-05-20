@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tover.xyz/p/d3bdd-note/</loc>
+    
+    <lastmod>2023-05-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tover.xyz/p/commitment-note-1-2/</loc>
+    
+    <lastmod>2023-04-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tover.xyz/p/commitment-note/</loc>
+    
+    <lastmod>2023-04-27</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tover.xyz/p/2023-qwb-Crypto/</loc>
     
     <lastmod>2023-04-26</lastmod>
@@ -184,13 +205,6 @@
   </url>
   
   <url>
-    <loc>https://tover.xyz/p/commitment-note-1-2/</loc>
-    
-    <lastmod>2022-09-27</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://tover.xyz/p/HNP-note/</loc>
     
     <lastmod>2022-08-08</lastmod>
@@ -222,13 +236,6 @@
     <loc>https://tover.xyz/p/hsctf-2022-trial-wp/</loc>
     
     <lastmod>2022-05-15</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tover.xyz/p/commitment-note/</loc>
-    
-    <lastmod>2022-05-14</lastmod>
     
   </url>
   
@@ -382,7 +389,7 @@
 
   <url>
     <loc>https://tover.xyz/</loc>
-    <lastmod>2023-04-26</lastmod>
+    <lastmod>2023-05-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -390,91 +397,91 @@
   
   <url>
     <loc>https://tover.xyz/tags/Crypto/</loc>
-    <lastmod>2023-04-26</lastmod>
+    <lastmod>2023-05-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://tover.xyz/tags/writeup/</loc>
-    <lastmod>2023-04-26</lastmod>
+    <lastmod>2023-05-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://tover.xyz/tags/Math/</loc>
-    <lastmod>2023-04-26</lastmod>
+    <lastmod>2023-05-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://tover.xyz/tags/Python/</loc>
-    <lastmod>2023-04-26</lastmod>
+    <lastmod>2023-05-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://tover.xyz/tags/PWN/</loc>
-    <lastmod>2023-04-26</lastmod>
+    <lastmod>2023-05-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://tover.xyz/tags/Linux/</loc>
-    <lastmod>2023-04-26</lastmod>
+    <lastmod>2023-05-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://tover.xyz/tags/Misc/</loc>
-    <lastmod>2023-04-26</lastmod>
+    <lastmod>2023-05-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://tover.xyz/tags/Android/</loc>
-    <lastmod>2023-04-26</lastmod>
+    <lastmod>2023-05-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://tover.xyz/tags/C-C/</loc>
-    <lastmod>2023-04-26</lastmod>
+    <lastmod>2023-05-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://tover.xyz/tags/Latex/</loc>
-    <lastmod>2023-04-26</lastmod>
+    <lastmod>2023-05-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://tover.xyz/tags/Game/</loc>
-    <lastmod>2023-04-26</lastmod>
+    <lastmod>2023-05-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://tover.xyz/tags/ML/</loc>
-    <lastmod>2023-04-26</lastmod>
+    <lastmod>2023-05-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://tover.xyz/tags/Web/</loc>
-    <lastmod>2023-04-26</lastmod>
+    <lastmod>2023-05-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

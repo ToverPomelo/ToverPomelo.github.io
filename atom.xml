@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2023-04-26T15:12:27.447Z</updated>
+  <updated>2023-05-20T07:55:55.389Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>d3bdd-note</title>
+    <link href="https://tover.xyz/p/d3bdd-note/"/>
+    <id>https://tover.xyz/p/d3bdd-note/</id>
+    <published>2023-05-09T13:29:54.000Z</published>
+    <updated>2023-05-20T07:55:55.389Z</updated>
+    
+    
+    <summary type="html">D3CTF的D3BDD，的一堆非预期解. 有幸一血（*★,°*:.☆(￣▽￣)/$:*.°★* 。</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="writeup" scheme="https://tover.xyz/tags/writeup/"/>
+    
+  </entry>
   
   <entry>
     <title>第一届强网杯密码数学专项赛——赛题一解题笔记</title>
@@ -131,7 +150,7 @@
     <link href="https://tover.xyz/p/commitment-note-1-2/"/>
     <id>https://tover.xyz/p/commitment-note-1-2/</id>
     <published>2022-09-04T02:44:33.000Z</published>
-    <updated>2022-09-27T15:21:21.610Z</updated>
+    <updated>2023-04-27T12:51:39.389Z</updated>
     
     
     <summary type="html">把上次内容展开一下.</summary>
@@ -241,7 +260,7 @@
     <link href="https://tover.xyz/p/commitment-note/"/>
     <id>https://tover.xyz/p/commitment-note/</id>
     <published>2022-05-10T06:58:57.000Z</published>
-    <updated>2022-05-14T12:20:14.095Z</updated>
+    <updated>2023-04-27T12:51:28.232Z</updated>
     
     
     <summary type="html">最近在搞的Commitment，卡壳了，写个笔记整理下思路.</summary>
