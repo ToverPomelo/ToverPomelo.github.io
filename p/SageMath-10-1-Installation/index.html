@@ -1,0 +1,256 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SageMath 10.1 安装记录 | Tover' Blog</title><meta name="keywords" content="Crypto,Linux"><meta name="author" content="Tover. L"><meta name="copyright" content="Tover. L"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="看到SageMath发布了10.1版，但没有了以前即下即用的binary版本，遂记录一下安装过程.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SageMath 10.1 安装记录">
+<meta property="og:url" content="https://tover.xyz/p/SageMath-10-1-Installation/index.html">
+<meta property="og:site_name" content="Tover&#39; Blog">
+<meta property="og:description" content="看到SageMath发布了10.1版，但没有了以前即下即用的binary版本，遂记录一下安装过程.">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://tover.xyz/img/icon.jpg">
+<meta property="article:published_time" content="2023-07-19T03:38:05.000Z">
+<meta property="article:modified_time" content="2023-07-19T04:07:26.284Z">
+<meta property="article:author" content="Tover. L">
+<meta property="article:tag" content="Crypto">
+<meta property="article:tag" content="Linux">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tover.xyz/img/icon.jpg"><link rel="shortcut icon" href="/img/icon.jpg"><link rel="canonical" href="https://tover.xyz/p/SageMath-10-1-Installation/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://npm.elemecdn.com/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":400},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://npm.elemecdn.com/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://npm.elemecdn.com/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://npm.elemecdn.com/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://npm.elemecdn.com/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'SageMath 10.1 安装记录',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-07-19 12:07:26'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Tover' Blog" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">55</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">13</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/icon.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Tover' Blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">SageMath 10.1 安装记录</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-07-19T03:38:05.000Z" title="发表于 2023-07-19 11:38:05">2023-07-19</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-07-19T04:07:26.284Z" title="更新于 2023-07-19 12:07:26">2023-07-19</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">636</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>2分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="SageMath 10.1 安装记录"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/p/SageMath-10-1-Installation/#post-comment"><span class="gitalk-comment-count"></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>看到<a target="_blank" rel="noopener" href="https://www.sagemath.org/">SageMath</a>发布了10.1版，但没有了以前即下即用的binary版本，遂记录一下安装过程。</p>
+<p>首先需要下载几个工具</p>
+<ul>
+<li>Miniconda3：解决依赖问题和环境污染问题的，SageMath好像从9.6后就推荐用Conda解决依赖包的问题，然后就下架了binary…，下载地址：<a target="_blank" rel="noopener" href="https://docs.conda.io/en/latest/miniconda.html">https://docs.conda.io/en/latest/miniconda.html</a></li>
+<li>Mambaforce：按照官网教程来即可：<a target="_blank" rel="noopener" href="https://doc.sagemath.org/html/en/installation/conda.html">https://doc.sagemath.org/html/en/installation/conda.html</a></li>
+<li>SageMath 10.1的源码：如果只用官网的<code>mamba create</code>好像会依赖不全，所以我选择用源码再build一遍，下载地址：<a target="_blank" rel="noopener" href="https://www.sagemath.org/download-source.html">https://www.sagemath.org/download-source.html</a></li>
+</ul>
+<p>懒人包：如果你是Linux 64bits的话</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh</span><br><span class="line">curl -L -O https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh</span><br><span class="line">wget https://mirrors.aliyun.com/sagemath/src/sage-10.0.tar.gz</span><br></pre></td></tr></table></figure>
+<p>然后Miniconda3和Mambaforce下载下来的都是个安装脚本，直接运行然后按照引导安装即可</p>
+<p>建议先安装Conda，安装完后需要激活一下<code>bashrc</code>，或者重启一下终端也行（其他shell的<code>source</code>换成对应的rc文件）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sh Miniconda3-latest-Linux-x86_64.sh</span><br><span class="line">source ~/.bashrc</span><br><span class="line">conda --version</span><br></pre></td></tr></table></figure>
+<p>如无意外应该可以运行<code>conda</code>了，但是终端执行命令会出现个烦人的<code>(base)</code>，可以参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_42078965/article/details/104156628">这里</a>解决：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;conda deactivate&quot; &gt;&gt; ~/.bashrc</span><br><span class="line">source ~/.bashrc</span><br></pre></td></tr></table></figure>
+<p>然后安装Mamba</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sh Mambaforge-$(uname)-$(uname -m).sh</span><br><span class="line">source ~/.bashrc</span><br><span class="line">mamba --version</span><br></pre></td></tr></table></figure>
+<p>解压源码压缩包</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar xf ./sage-10.0.tar.gz</span><br><span class="line">cd ./sage-10.0</span><br></pre></td></tr></table></figure>
+<p>在build之前先换一下Conda的源，可以参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_52559040/article/details/130838584">这里</a>，比如我换阿里的源，就把<code>~/.condarc</code>改成：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">channels:</span><br><span class="line">  - defaults</span><br><span class="line">show_channel_urls: true</span><br><span class="line">default_channels:</span><br><span class="line">  - http://mirrors.aliyun.com/anaconda/pkgs/main</span><br><span class="line">  - http://mirrors.aliyun.com/anaconda/pkgs/r</span><br><span class="line">  - http://mirrors.aliyun.com/anaconda/pkgs/msys2</span><br><span class="line">custom_channels:</span><br><span class="line">  conda-forge: http://mirrors.aliyun.com/anaconda/cloud</span><br><span class="line">  msys2: http://mirrors.aliyun.com/anaconda/cloud</span><br><span class="line">  bioconda: http://mirrors.aliyun.com/anaconda/cloud</span><br><span class="line">  menpo: http://mirrors.aliyun.com/anaconda/cloud</span><br><span class="line">  pytorch: http://mirrors.aliyun.com/anaconda/cloud</span><br><span class="line">  simpleitk: http://mirrors.aliyun.com/anaconda/cloud</span><br></pre></td></tr></table></figure>
+<p>最后就是按照官网<a target="_blank" rel="noopener" href="https://doc.sagemath.org/html/en/installation/conda.html#using-conda-to-provide-all-dependencies-for-the-sage-library-experimental">最下面的教程</a>一顿操作了，build的时候需要在<code>sage-10.0</code>目录下执行：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">export SAGE_NUM_THREADS=16</span><br><span class="line">./bootstrap-conda</span><br><span class="line">mamba env create --file src/environment-dev.yml --name sage-dev</span><br><span class="line">conda activate sage-dev</span><br><span class="line">./bootstrap</span><br><span class="line">./configure --with-python=$CONDA_PREFIX/bin/python             \</span><br><span class="line">              --prefix=$CONDA_PREFIX                             \</span><br><span class="line">              $(for pkg in $(./sage -package list :standard:     \</span><br><span class="line">                               --exclude rpy2                    \</span><br><span class="line">                               --has-file spkg-configure.m4      \</span><br><span class="line">                               --has-file distros/conda.txt); do \</span><br><span class="line">                    echo --with-system-$pkg=force;               \</span><br><span class="line">                done)</span><br><span class="line">pip install --no-build-isolation -v -v --editable ./pkgs/sage-conf ./pkgs/sage-setup</span><br><span class="line">pip install --no-build-isolation -v -v --editable ./src</span><br><span class="line">sage -c &#x27;print(version())&#x27;</span><br><span class="line"></span><br><span class="line">mamba deactivate</span><br></pre></td></tr></table></figure>
+<p>PS：<code>SAGE_NUM_THREADS</code>可以根据自己电脑的线程数设置</p>
+<p>然后每次运行的时候都需要先<code>mamba activate</code>一下，执行完要<code>mamba deactivate</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mamba activate sage-dev</span><br><span class="line"><span class="meta">#</span><span class="bash"> run sage ... ...</span></span><br><span class="line">mamba deactivate</span><br></pre></td></tr></table></figure>
+<p>其实有点麻烦，有空看看能不能搞个启动脚本（留坑）</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Tover. L</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://tover.xyz/p/SageMath-10-1-Installation/">https://tover.xyz/p/SageMath-10-1-Installation/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://tover.xyz" target="_blank">Tover' Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Crypto/">Crypto</a><a class="post-meta__tags" href="/tags/Linux/">Linux</a></div><div class="post_share"><div class="social-share" data-image="/img/icon.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://npm.elemecdn.com/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://npm.elemecdn.com/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/p/n-root-in-F/"><img class="next-cover" src="/img/icon.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">域中求n次方根的学习笔记</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/p/easy-crypt-install/" title="EasyCrypt编译安装踩坑记录"><img class="cover" src="/img/icon.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-11-04</div><div class="title">EasyCrypt编译安装踩坑记录</div></div></a></div><div><a href="/p/easy-crypt-tex/" title="EasyCrypt文档编译踩坑记录"><img class="cover" src="/img/icon.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-11-02</div><div class="title">EasyCrypt文档编译踩坑记录</div></div></a></div><div><a href="/p/2021-ByteCTF-Overheard/" title="2021-ByteCTF的Overheard"><img class="cover" src="/img/icon.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-10-17</div><div class="title">2021-ByteCTF的Overheard</div></div></a></div><div><a href="/p/2021-ycb-wp/" title="2021羊城杯Crypto公钥部分WriteUp"><img class="cover" src="/img/icon.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-09-14</div><div class="title">2021羊城杯Crypto公钥部分WriteUp</div></div></a></div><div><a href="/p/2022-DASCTF-July-Crypto/" title="2022DASCTF七月赛 Crypto部分Writeup"><img class="cover" src="/img/icon.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-07-25</div><div class="title">2022DASCTF七月赛 Crypto部分Writeup</div></div></a></div><div><a href="/p/2022-HWSwinter-Elgamal/" title="2022HWS冬令营预选赛的Elgamal"><img class="cover" src="/img/icon.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-25</div><div class="title">2022HWS冬令营预选赛的Elgamal</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Tover. L</div><div class="author-info__description">二进制是密码学人的自我修养 =v=</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">55</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">13</div></a></div></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/ToverPomelo" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:q664514882@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">/</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/p/SageMath-10-1-Installation/" title="SageMath 10.1 安装记录"><img src="/img/icon.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SageMath 10.1 安装记录"/></a><div class="content"><a class="title" href="/p/SageMath-10-1-Installation/" title="SageMath 10.1 安装记录">SageMath 10.1 安装记录</a><time datetime="2023-07-19T03:38:05.000Z" title="发表于 2023-07-19 11:38:05">2023-07-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/p/n-root-in-F/" title="域中求n次方根的学习笔记"><img src="/img/icon.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="域中求n次方根的学习笔记"/></a><div class="content"><a class="title" href="/p/n-root-in-F/" title="域中求n次方根的学习笔记">域中求n次方根的学习笔记</a><time datetime="2023-07-18T02:17:05.000Z" title="发表于 2023-07-18 10:17:05">2023-07-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/p/d3bdd-note/" title="2023D^3CTF的d3bdd"><img src="/img/icon.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2023D^3CTF的d3bdd"/></a><div class="content"><a class="title" href="/p/d3bdd-note/" title="2023D^3CTF的d3bdd">2023D^3CTF的d3bdd</a><time datetime="2023-05-09T13:29:54.000Z" title="发表于 2023-05-09 21:29:54">2023-05-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/p/2023-qwb-Crypto/" title="第一届强网杯密码数学专项赛——赛题一解题笔记"><img src="/img/icon.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="第一届强网杯密码数学专项赛——赛题一解题笔记"/></a><div class="content"><a class="title" href="/p/2023-qwb-Crypto/" title="第一届强网杯密码数学专项赛——赛题一解题笔记">第一届强网杯密码数学专项赛——赛题一解题笔记</a><time datetime="2023-04-26T12:54:05.000Z" title="发表于 2023-04-26 20:54:05">2023-04-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/p/NTRU/" title="NTRU学习笔记"><img src="/img/icon.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="NTRU学习笔记"/></a><div class="content"><a class="title" href="/p/NTRU/" title="NTRU学习笔记">NTRU学习笔记</a><time datetime="2023-02-07T07:11:26.000Z" title="发表于 2023-02-07 15:11:26">2023-02-07</time></div></div></div></div></div></div></main><footer id="footer" style="background: linear-gradient(6.6deg, #0042bebb, #8e5690bb, #18466ebb, #000347bb)"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2023 By Tover. L</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><a target="_blank" rel="noopener" href="https://c10udlnk.top/">二进制是密码学人的自我修养 =v=</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.4.0/gitalk.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
+
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: '4989f2182ba1c60d6a7a',
+      clientSecret: '80988778d911dff7e85489411dde0cce80d72e83',
+      repo: 'ToverPomelo.github.io',
+      owner: 'ToverPomelo',
+      admin: ['ToverPomelo'],
+      id: 'f4b31d1cc459d8e8d0fc8b21a12c3d1d',
+      language: 'zh-CN',
+      perPage: 10,
+      distractionFreeMode: false,
+      pagerDirection: 'last',
+      createIssueManually: true,
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    getScript('https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.4.0/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !false) {
+  if (false) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start -->
+    <div class="myspine-spine-widget"></div>
+    <script src="/js/myspine/spine-widget.js"></script>
+    <script src="/js/myspine/spine-skeleton-binary.js"></script>
+    <script src="/js/myspine/myspine.js"></script>
+    <link type="text/css" href="/css/_third-party/myspine.css"></link>
+    <script>
+        new MySpine({
+            spineDir: "/spine_models/",
+            models: [{"name":"sd_21miku_normal_r/","skin":"default","atlas":"sekai_atlas.atlas","skeleton":"sekai_atlas.skel"},{"name":"sd_21miku_band_r/","skin":"default","atlas":"sekai_atlas.atlas","skeleton":"sekai_atlas.skel"},{"name":"sd_21miku_idol_r/","skin":"default","atlas":"sekai_atlas.atlas","skeleton":"sekai_atlas.skel"},{"name":"sd_21miku_night_r/","skin":"default","atlas":"sekai_atlas.atlas","skeleton":"sekai_atlas.skel"},{"name":"sd_21miku_street_r/","skin":"default","atlas":"sekai_atlas.atlas","skeleton":"sekai_atlas.skel"},{"name":"sd_21miku_wonder_r/","skin":"default","atlas":"sekai_atlas.atlas","skeleton":"sekai_atlas.skel"}],
+            styles: {"widget":{"width":"200px","height":"200px"},"voiceText":{"color":"#e6e6e6"}},
+            behaviors: {"start":{"animation":"w_emu_run01_f","voice":"","text":"Ohhhhh好耶"},"idle":{"maxMinutes":1,"animations":[{"name":"m_cool_idle01_f","loop":false},{"name":"m_cool_joy01_f","loop":false},{"name":"m_happy_idle01_f","loop":false},{"name":"m_happy_joy01_f","loop":false},{"name":"m_normal_idle01_f","loop":false},{"name":"m_normal_joy01_f","loop":false},{"name":"m_staff_idle01_f","loop":false},{"name":"n_general_wait_01_f","loop":false},{"name":"pose_default","loop":false},{"name":"u_vbsmen_battledore00_f","loop":false},{"name":"u_vbswomen_battledore00_f","loop":false},{"name":"w_adult_idle01_f","loop":false},{"name":"w_adult_joy01_f","loop":false},{"name":"w_cool_idle01_f","loop":false},{"name":"w_cool_joy01_f","loop":false},{"name":"w_cute_idle01_f","loop":false},{"name":"w_cute_joy01_f","loop":false},{"name":"w_happy_idle01_f","loop":false},{"name":"w_happy_joy01_f","loop":false},{"name":"w_normal_idle01_f","loop":false},{"name":"w_normal_joy01_f","loop":false},{"name":"w_pure_idle01_f","loop":false},{"name":"w_pure_joy01_f","loop":false},{"name":"w_staff_idle01_f","loop":false}],"voices":[{"voice":"","text":"不买立省百分百"}]},"interact":{"maxPlaySec":3,"animations":[{"name":"w_normal_joy01_b","loop":false},{"name":"m_cool_angry01_f","loop":false},{"name":"m_cool_doubt01_f","loop":false},{"name":"m_cool_laugh01_f","loop":false},{"name":"m_cool_listen01_f","loop":false},{"name":"m_cool_sad01_f","loop":false},{"name":"m_cool_surprise01_f","loop":false},{"name":"m_cool_talk01_f","loop":false},{"name":"m_happy_angry01_f","loop":false},{"name":"m_happy_doubt01_f","loop":false},{"name":"m_happy_laugh01_f","loop":false},{"name":"m_happy_listen01_f","loop":false},{"name":"m_happy_sad01_f","loop":false},{"name":"m_happy_surprise01_f","loop":false},{"name":"m_happy_talk01_f","loop":false},{"name":"m_normal_angry01_f","loop":false},{"name":"m_normal_doubt01_f","loop":false},{"name":"m_normal_laugh01_f","loop":false},{"name":"m_normal_listen01_f","loop":false},{"name":"m_normal_surprise01_f","loop":false},{"name":"m_normal_talk01_f","loop":false},{"name":"m_normal_walk01_b","loop":false},{"name":"m_normal_walk01_f","loop":false},{"name":"m_tsukasa_run01_f","loop":false},{"name":"n_general_walk_01_b","loop":false},{"name":"n_general_walk_01_f","loop":false},{"name":"u_liondancerobot_run_01_f","loop":false},{"name":"u_liondancerobot_run_02_f","loop":false},{"name":"u_vbsmen_battledore01_f","loop":false},{"name":"u_vbsmen_battledore02_f","loop":false},{"name":"u_vbsmen_battledore03_f","loop":false},{"name":"u_vbsmen_battledore04_f","loop":false},{"name":"u_vbswomen_battledore01_f","loop":false},{"name":"u_vbswomen_battledore02_f","loop":false},{"name":"u_vbswomen_battledore03_f","loop":false},{"name":"u_vbswomen_battledore04_f","loop":false},{"name":"w_adult_angry01_f","loop":false},{"name":"w_adult_doubt01_f","loop":false},{"name":"w_adult_laugh01_f","loop":false},{"name":"w_adult_listen01_f","loop":false},{"name":"w_adult_sad01_f","loop":false},{"name":"w_adult_surprise01_f","loop":false},{"name":"w_adult_talk01_f","loop":false},{"name":"w_cool_angry01_f","loop":false},{"name":"w_cool_doubt01_f","loop":false},{"name":"w_cool_laugh01_f","loop":false},{"name":"w_cool_listen01_f","loop":false},{"name":"w_cool_sad01_f","loop":false},{"name":"w_cool_surprise01_f","loop":false},{"name":"w_cool_talk01_f","loop":false},{"name":"w_cute_angry01_f","loop":false},{"name":"w_cute_angry02_f","loop":false},{"name":"w_cute_doubt01_f","loop":false},{"name":"w_cute_laugh01_f","loop":false},{"name":"w_cute_listen01_f","loop":false},{"name":"w_cute_sad01_f","loop":false},{"name":"w_cute_surprise01_f","loop":false},{"name":"w_cute_talk01_f","loop":false},{"name":"w_emu_run02_f","loop":false},{"name":"w_happy_angry01_f","loop":false},{"name":"w_happy_angry02_f","loop":false},{"name":"w_happy_doubt01_f","loop":false},{"name":"w_happy_doubt02_f","loop":false},{"name":"w_happy_laugh01_f","loop":false},{"name":"w_happy_listen01_f","loop":false},{"name":"w_happy_sad01_f","loop":false},{"name":"w_happy_surprise01_f","loop":false},{"name":"w_happy_talk01_f","loop":false},{"name":"w_normal_laugh01_f","loop":false},{"name":"w_normal_listen01_f","loop":false},{"name":"w_normal_talk01_f","loop":false},{"name":"w_normal_walk01_b","loop":false},{"name":"w_normal_walk01_f","loop":false},{"name":"w_pure_angry01_f","loop":false},{"name":"w_pure_doubt01_f","loop":false},{"name":"w_pure_laugh01_f","loop":false},{"name":"w_pure_listen01_f","loop":false},{"name":"w_pure_sad01_f","loop":false},{"name":"w_pure_surprise01_f","loop":false},{"name":"w_pure_talk01_f","loop":false},{"name":"z_mesh_templete","loop":false},{"name":"z_test_F_negi01","loop":false}],"voices":[{"voice":"","text":"既见未来，为何不buy"}]}}
+        });
+    </script>
+    <!-- hexo injector body_end end --></body></html>
