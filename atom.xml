@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2023-07-19T04:07:26.284Z</updated>
+  <updated>2023-07-19T13:10:27.669Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -21,10 +21,10 @@
     <link href="https://tover.xyz/p/SageMath-10-1-Installation/"/>
     <id>https://tover.xyz/p/SageMath-10-1-Installation/</id>
     <published>2023-07-19T03:38:05.000Z</published>
-    <updated>2023-07-19T04:07:26.284Z</updated>
+    <updated>2023-07-19T13:10:27.669Z</updated>
     
     
-    <summary type="html">看到SageMath发布了10.1版，但没有了以前即下即用的binary版本，遂记录一下安装过程.</summary>
+    <summary type="html">看到SageMath发布了10.1版，但没有了以前即下即用的binary版本，遂记录一下安装过程（Linux版本）.</summary>
     
     
     
