@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tover.xyz/p/hexo-toc-href/</loc>
+    
+    <lastmod>2023-09-07</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tover.xyz/p/n-root-in-F/</loc>
     
     <lastmod>2023-09-07</lastmod>
@@ -452,13 +459,6 @@
   </url>
   
   <url>
-    <loc>https://tover.xyz/tags/PWN/</loc>
-    <lastmod>2023-09-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://tover.xyz/tags/Linux/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>daily</changefreq>
@@ -467,6 +467,13 @@
   
   <url>
     <loc>https://tover.xyz/tags/Misc/</loc>
+    <lastmod>2023-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://tover.xyz/tags/PWN/</loc>
     <lastmod>2023-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

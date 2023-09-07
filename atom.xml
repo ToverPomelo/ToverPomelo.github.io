@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2023-09-04T06:28:53.184Z</updated>
+  <updated>2023-09-07T11:19:25.693Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博客Hexo的toc链接问题修复记录</title>
+    <link href="https://tover.xyz/p/hexo-toc-href/"/>
+    <id>https://tover.xyz/p/hexo-toc-href/</id>
+    <published>2023-09-07T11:09:55.000Z</published>
+    <updated>2023-09-07T11:19:25.693Z</updated>
+    
+    
+    <summary type="html">修复了一级标题的url显示#null导致toc无法跳转的问题.</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>2023羊城杯密码题WP</title>
@@ -970,9 +985,9 @@
     
     
     
-    <category term="PWN" scheme="https://tover.xyz/tags/PWN/"/>
-    
     <category term="Linux" scheme="https://tover.xyz/tags/Linux/"/>
+    
+    <category term="PWN" scheme="https://tover.xyz/tags/PWN/"/>
     
   </entry>
   
@@ -1040,9 +1055,9 @@
     
     
     
-    <category term="PWN" scheme="https://tover.xyz/tags/PWN/"/>
-    
     <category term="Linux" scheme="https://tover.xyz/tags/Linux/"/>
+    
+    <category term="PWN" scheme="https://tover.xyz/tags/PWN/"/>
     
   </entry>
   
