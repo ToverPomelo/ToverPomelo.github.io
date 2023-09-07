@@ -78,7 +78,7 @@
     <link href="https://tover.xyz/p/n-root-in-F/"/>
     <id>https://tover.xyz/p/n-root-in-F/</id>
     <published>2023-07-18T02:17:05.000Z</published>
-    <updated>2023-07-20T11:11:19.140Z</updated>
+    <updated>2023-09-07T05:30:12.143Z</updated>
     
     
     <summary type="html">稍微补一下之前留下来的AMM（Adleman-Manders-Miller）算法的坑，发现SageMath中有函数可以直接解，于是撸了新的脚本.</summary>
