@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2023-09-07T11:19:25.693Z</updated>
+  <updated>2023-09-18T06:06:44.358Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2023蓝帽杯半决赛Crypto赛题WP</title>
+    <link href="https://tover.xyz/p/2023-lmb-semi-Crypto/"/>
+    <id>https://tover.xyz/p/2023-lmb-semi-Crypto/</id>
+    <published>2023-09-18T02:43:21.000Z</published>
+    <updated>2023-09-18T06:06:44.358Z</updated>
+    
+    
+    <summary type="html">两道题，赛后被问到，顺便水水博客.</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="writeup" scheme="https://tover.xyz/tags/writeup/"/>
+    
+  </entry>
   
   <entry>
     <title>博客Hexo的toc链接问题修复记录</title>
