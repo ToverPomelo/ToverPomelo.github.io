@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2023-09-18T06:06:44.358Z</updated>
+  <updated>2023-09-19T07:58:37.449Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>区块链学习笔记——Ethernaut刷题记录</title>
+    <link href="https://tover.xyz/p/Ethernaut-note/"/>
+    <id>https://tover.xyz/p/Ethernaut-note/</id>
+    <published>2023-09-18T09:33:30.000Z</published>
+    <updated>2023-09-19T07:58:37.449Z</updated>
+    
+    
+    <summary type="html">如题，持续更新中...</summary>
+    
+    
+    
+    
+    <category term="writeup" scheme="https://tover.xyz/tags/writeup/"/>
+    
+    <category term="BlockChain" scheme="https://tover.xyz/tags/BlockChain/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2023蓝帽杯半决赛Crypto赛题WP</title>
     <link href="https://tover.xyz/p/2023-lmb-semi-Crypto/"/>
     <id>https://tover.xyz/p/2023-lmb-semi-Crypto/</id>
     <published>2023-09-18T02:43:21.000Z</published>
-    <updated>2023-09-18T06:06:44.358Z</updated>
+    <updated>2023-09-18T06:25:49.293Z</updated>
     
     
     <summary type="html">两道题，赛后被问到，顺便水水博客.</summary>
