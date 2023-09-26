@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2023-09-21T09:42:37.009Z</updated>
+  <updated>2023-09-26T07:17:09.136Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>区块链学习笔记——Ethernaut刷题记录</title>
+    <title>置换群群元的开平方：以BRICKS+的sqrt为例</title>
+    <link href="https://tover.xyz/p/PermutationGroup-BRICKS-sqrt/"/>
+    <id>https://tover.xyz/p/PermutationGroup-BRICKS-sqrt/</id>
+    <published>2023-09-26T01:49:42.000Z</published>
+    <updated>2023-09-26T07:17:09.136Z</updated>
+    
+    
+    <summary type="html">很少见的置换群的题目，这次是个开平方，本来以为只有两个解，然后开出了2^20+个解...</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="writeup" scheme="https://tover.xyz/tags/writeup/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>区块链学习笔记：Ethernaut刷题记录</title>
     <link href="https://tover.xyz/p/Ethernaut-note/"/>
     <id>https://tover.xyz/p/Ethernaut-note/</id>
     <published>2023-09-18T09:33:30.000Z</published>
-    <updated>2023-09-21T09:42:37.009Z</updated>
+    <updated>2023-09-26T01:56:50.711Z</updated>
     
     
     <summary type="html">如题，持续更新中...</summary>
