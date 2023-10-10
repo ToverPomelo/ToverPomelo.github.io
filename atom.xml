@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2023-09-28T03:12:50.422Z</updated>
+  <updated>2023-10-10T09:18:23.734Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>结式、伴随矩阵、特征多项式和2023江苏省数据安全竞赛的hardrsa</title>
+    <link href="https://tover.xyz/p/resultant-companion-hardrsa/"/>
+    <id>https://tover.xyz/p/resultant-companion-hardrsa/</id>
+    <published>2023-10-10T06:52:04.000Z</published>
+    <updated>2023-10-10T09:18:23.734Z</updated>
+    
+    
+    <summary type="html">思路比较新奇的一道题，马克一下.</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="writeup" scheme="https://tover.xyz/tags/writeup/"/>
+    
+  </entry>
   
   <entry>
     <title>置换群群元的开平方：以BRICS+的sqrt为例</title>
