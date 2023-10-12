@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2023-10-10T09:18:23.734Z</updated>
+  <updated>2023-10-12T05:28:10.159Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>格攻击之小未知数方程求解入门——原理与例子</title>
+    <link href="https://tover.xyz/p/LLL-attack-equation/"/>
+    <id>https://tover.xyz/p/LLL-attack-equation/</id>
+    <published>2023-10-11T06:11:56.000Z</published>
+    <updated>2023-10-12T05:28:10.159Z</updated>
+    
+    
+    <summary type="html">上一次写格攻击的教程已经是两年前的Wiener&#39;s v.s Lattices，两年来新学了不少的东西，也纠正了以前不少的错误，所以决定新开一篇文章，系统性地讲一下格攻击——之解小未知数方程.</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="Math" scheme="https://tover.xyz/tags/Math/"/>
+    
+  </entry>
+  
+  <entry>
     <title>结式、伴随矩阵、特征多项式和2023江苏省数据安全竞赛的hardrsa</title>
     <link href="https://tover.xyz/p/resultant-companion-hardrsa/"/>
     <id>https://tover.xyz/p/resultant-companion-hardrsa/</id>
     <published>2023-10-10T06:52:04.000Z</published>
-    <updated>2023-10-10T09:18:23.734Z</updated>
+    <updated>2023-10-11T02:09:26.793Z</updated>
     
     
     <summary type="html">思路比较新奇的一道题，马克一下.</summary>
