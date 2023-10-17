@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2023-10-12T05:28:10.159Z</updated>
+  <updated>2023-10-17T04:04:11.131Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://tover.xyz/p/LLL-attack-equation/"/>
     <id>https://tover.xyz/p/LLL-attack-equation/</id>
     <published>2023-10-11T06:11:56.000Z</published>
-    <updated>2023-10-12T05:28:10.159Z</updated>
+    <updated>2023-10-17T04:04:11.131Z</updated>
     
     
     <summary type="html">上一次写格攻击的教程已经是两年前的Wiener&#39;s v.s Lattices，两年来新学了不少的东西，也纠正了以前不少的错误，所以决定新开一篇文章，系统性地讲一下格攻击——之解小未知数方程.</summary>
@@ -1142,7 +1142,7 @@
     <link href="https://tover.xyz/p/libc-compile/"/>
     <id>https://tover.xyz/p/libc-compile/</id>
     <published>2019-08-21T10:43:53.000Z</published>
-    <updated>2023-10-17T02:49:51.035Z</updated>
+    <updated>2023-10-17T09:26:52.888Z</updated>
     
     
     <summary type="html">编译不同版本的带调试信息的libc，以及在运行时、pwntools脚本、GDB中更换不同的libc库的方法介绍</summary>
