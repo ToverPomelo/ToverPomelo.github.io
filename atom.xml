@@ -78,7 +78,7 @@
     <link href="https://tover.xyz/p/Ethernaut-note/"/>
     <id>https://tover.xyz/p/Ethernaut-note/</id>
     <published>2023-09-18T09:33:30.000Z</published>
-    <updated>2023-10-12T07:39:55.845Z</updated>
+    <updated>2023-10-19T02:25:47.597Z</updated>
     
     
     <summary type="html">如题，持续更新中...</summary>
@@ -1142,7 +1142,7 @@
     <link href="https://tover.xyz/p/libc-compile/"/>
     <id>https://tover.xyz/p/libc-compile/</id>
     <published>2019-08-21T10:43:53.000Z</published>
-    <updated>2023-10-17T09:26:52.888Z</updated>
+    <updated>2023-10-19T02:27:51.417Z</updated>
     
     
     <summary type="html">编译不同版本的带调试信息的libc，以及在运行时、pwntools脚本、GDB中更换不同的libc库的方法介绍</summary>
