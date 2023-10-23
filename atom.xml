@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2023-10-17T04:04:11.131Z</updated>
+  <updated>2023-10-23T09:16:52.242Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2023 N1CTF密码部分题解</title>
+    <link href="https://tover.xyz/p/2023-N1CTF-Crypto-Part/"/>
+    <id>https://tover.xyz/p/2023-N1CTF-Crypto-Part/</id>
+    <published>2023-10-23T07:47:59.000Z</published>
+    <updated>2023-10-23T09:16:52.242Z</updated>
+    
+    
+    <summary type="html">其实就做了两题，题目质量还挺好的.</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="writeup" scheme="https://tover.xyz/tags/writeup/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>可证明安全学习笔记——Diffie-Hellman的被动攻击</title>
+    <link href="https://tover.xyz/p/Provable-security-Diffie-Hellman/"/>
+    <id>https://tover.xyz/p/Provable-security-Diffie-Hellman/</id>
+    <published>2023-10-19T05:51:11.000Z</published>
+    <updated>2023-10-23T09:21:16.115Z</updated>
+    
+    
+    <summary type="html">如题.</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="Math" scheme="https://tover.xyz/tags/Math/"/>
+    
+  </entry>
   
   <entry>
     <title>格攻击之小未知数方程求解入门——原理与例子</title>
