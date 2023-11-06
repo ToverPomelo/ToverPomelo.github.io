@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2023-10-23T09:24:06.193Z</updated>
+  <updated>2023-11-06T06:19:01.097Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2023鹏城杯密码全WP</title>
+    <link href="https://tover.xyz/p/2023-pcb-Crypto/"/>
+    <id>https://tover.xyz/p/2023-pcb-Crypto/</id>
+    <published>2023-11-06T05:08:32.000Z</published>
+    <updated>2023-11-06T06:19:01.097Z</updated>
+    
+    
+    <summary type="html">2023鹏城杯，Crypto四题Writeup.</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="writeup" scheme="https://tover.xyz/tags/writeup/"/>
+    
+  </entry>
   
   <entry>
     <title>2023 N1CTF密码部分题解</title>
@@ -391,7 +410,7 @@
     <link href="https://tover.xyz/p/HNP-note/"/>
     <id>https://tover.xyz/p/HNP-note/</id>
     <published>2022-08-03T07:10:50.000Z</published>
-    <updated>2022-08-08T08:15:38.908Z</updated>
+    <updated>2023-11-06T06:16:31.687Z</updated>
     
     
     <summary type="html">隐藏数问题（Hidden Number Problem, HNP）的学习笔记，2022高校密码数学挑战赛为例.</summary>
