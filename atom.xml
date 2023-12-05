@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2023-11-06T06:19:01.097Z</updated>
+  <updated>2023-12-05T09:36:07.476Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在SageMath中安装G6K</title>
+    <link href="https://tover.xyz/p/G6k-Sage-Install/"/>
+    <id>https://tover.xyz/p/G6k-Sage-Install/</id>
+    <published>2023-12-05T11:04:15.000Z</published>
+    <updated>2023-12-05T09:36:07.476Z</updated>
+    
+    
+    <summary type="html">在SageMath中安装和使用G6K格筛算法.</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="Linux" scheme="https://tover.xyz/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>2023鹏城杯密码全WP</title>
@@ -59,7 +78,7 @@
     <link href="https://tover.xyz/p/Provable-security-Diffie-Hellman/"/>
     <id>https://tover.xyz/p/Provable-security-Diffie-Hellman/</id>
     <published>2023-10-19T05:51:11.000Z</published>
-    <updated>2023-10-23T09:32:14.323Z</updated>
+    <updated>2023-12-05T09:07:49.736Z</updated>
     
     
     <summary type="html">如题.</summary>
@@ -135,7 +154,7 @@
     <link href="https://tover.xyz/p/Ethernaut-note/"/>
     <id>https://tover.xyz/p/Ethernaut-note/</id>
     <published>2023-09-18T09:33:30.000Z</published>
-    <updated>2023-10-19T03:45:49.101Z</updated>
+    <updated>2023-12-01T08:57:23.693Z</updated>
     
     
     <summary type="html">如题，持续更新中...</summary>
