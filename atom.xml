@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2023-12-19T03:10:34.122Z</updated>
+  <updated>2024-01-04T03:02:37.414Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Wiener没有说的攻击范围</title>
+    <link href="https://tover.xyz/p/Wiener-general/"/>
+    <id>https://tover.xyz/p/Wiener-general/</id>
+    <published>2024-01-03T11:24:15.000Z</published>
+    <updated>2024-01-04T03:02:37.414Z</updated>
+    
+    
+    <summary type="html">一直以来看到Wiener攻击的攻击范围都是d &lt; 1/3·n^(1/4)，但算了一下好像并不是这么回事.</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="Math" scheme="https://tover.xyz/tags/Math/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2023强网杯密码部分题解</title>
     <link href="https://tover.xyz/p/2023-qwb-Crypto-Part/"/>
     <id>https://tover.xyz/p/2023-qwb-Crypto-Part/</id>
     <published>2023-12-18T08:36:53.000Z</published>
-    <updated>2023-12-19T03:10:34.122Z</updated>
+    <updated>2023-12-19T07:01:59.294Z</updated>
     
     
     <summary type="html">就摸了4题，勉强算做了一半吧.</summary>
@@ -340,7 +359,7 @@
     <link href="https://tover.xyz/p/NTRU/"/>
     <id>https://tover.xyz/p/NTRU/</id>
     <published>2023-02-07T07:11:26.000Z</published>
-    <updated>2023-04-25T09:24:00.138Z</updated>
+    <updated>2024-01-03T09:21:31.044Z</updated>
     
     
     <summary type="html">如题，理论、代码和漏洞利用.</summary>
