@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2024-01-04T03:02:37.414Z</updated>
+  <updated>2024-02-05T08:54:24.589Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2024 L3HCTF密码部分题解</title>
+    <link href="https://tover.xyz/p/2024-L3HCTF-guess/"/>
+    <id>https://tover.xyz/p/2024-L3HCTF-guess/</id>
+    <published>2024-02-05T07:54:30.000Z</published>
+    <updated>2024-02-05T08:54:24.589Z</updated>
+    
+    
+    <summary type="html">赛中秒了badrlwe，但是一直怼不出guess，赛后复盘一下，发现了以前搞AGCD和HNP的一点小问题，所以顺便记录一下.</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="writeup" scheme="https://tover.xyz/tags/writeup/"/>
+    
+  </entry>
   
   <entry>
     <title>Wiener没有说的攻击范围</title>
@@ -192,7 +211,7 @@
     <link href="https://tover.xyz/p/Ethernaut-note/"/>
     <id>https://tover.xyz/p/Ethernaut-note/</id>
     <published>2023-09-18T09:33:30.000Z</published>
-    <updated>2023-12-01T08:57:23.693Z</updated>
+    <updated>2024-01-25T03:33:19.850Z</updated>
     
     
     <summary type="html">如题，持续更新中...</summary>
@@ -615,7 +634,7 @@
     <link href="https://tover.xyz/p/d3factor-coppersmith/"/>
     <id>https://tover.xyz/p/d3factor-coppersmith/</id>
     <published>2022-03-13T01:35:59.000Z</published>
-    <updated>2022-03-24T09:49:02.194Z</updated>
+    <updated>2024-01-12T07:21:14.115Z</updated>
     
     
     <summary type="html">2022 D3CTF 的d3factor，顺便用来学习一元（univariate）的Coppersmith方法；然后参考了Boneh-Durfee对RSA的攻击尽量讲一下二元（bivariate）的方法（菜</summary>
