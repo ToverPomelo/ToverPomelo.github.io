@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Tover&#39; Blog</title>
+  <title>Tover&#39;s Blog</title>
   
   
   <link href="https://tover.xyz/atom.xml" rel="self"/>
@@ -469,7 +469,7 @@
     <link href="https://tover.xyz/p/commitment-note-1-2/"/>
     <id>https://tover.xyz/p/commitment-note-1-2/</id>
     <published>2022-09-04T02:44:33.000Z</published>
-    <updated>2023-04-27T12:51:39.389Z</updated>
+    <updated>2024-03-25T08:27:51.337Z</updated>
     
     
     <summary type="html">把上次内容展开一下.</summary>
@@ -579,7 +579,7 @@
     <link href="https://tover.xyz/p/commitment-note/"/>
     <id>https://tover.xyz/p/commitment-note/</id>
     <published>2022-05-10T06:58:57.000Z</published>
-    <updated>2023-04-27T12:51:28.232Z</updated>
+    <updated>2024-03-25T08:27:57.048Z</updated>
     
     
     <summary type="html">最近在搞的Commitment，卡壳了，写个笔记整理下思路.</summary>
