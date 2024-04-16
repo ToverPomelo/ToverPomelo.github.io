@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2024-02-05T08:54:24.589Z</updated>
+  <updated>2024-04-16T03:56:28.949Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>RSA中dp泄露的广义解法</title>
+    <link href="https://tover.xyz/p/2024-HSCTF-babyDP/"/>
+    <id>https://tover.xyz/p/2024-HSCTF-babyDP/</id>
+    <published>2024-04-16T02:59:59.000Z</published>
+    <updated>2024-04-16T03:56:28.949Z</updated>
+    
+    
+    <summary type="html">dp泄露应该是每个密码手必会的基础攻击之一了，前段时间复习了一下这些基础攻击，发现了一种用Coppersmith的dp泄露解法，这种方法不再需要e可枚举，所以是一种更广义的解法.</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="writeup" scheme="https://tover.xyz/tags/writeup/"/>
+    
+  </entry>
   
   <entry>
     <title>2024 L3HCTF密码部分题解</title>
