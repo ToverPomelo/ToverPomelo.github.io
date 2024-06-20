@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2024-06-11T07:10:00.558Z</updated>
+  <updated>2024-06-20T15:10:41.479Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2024 CryptoCTF Writeup（绝赞更新中...）</title>
+    <link href="https://tover.xyz/p/2024-CryptoCTF/"/>
+    <id>https://tover.xyz/p/2024-CryptoCTF/</id>
+    <published>2024-06-20T14:59:48.000Z</published>
+    <updated>2024-06-20T15:10:41.479Z</updated>
+    
+    
+    <summary type="html">如题.</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="writeup" scheme="https://tover.xyz/tags/writeup/"/>
+    
+  </entry>
   
   <entry>
     <title>C语言多线程爆破与2023CryptoCTF的Blue Office</title>
