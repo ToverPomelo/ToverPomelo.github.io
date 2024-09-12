@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2024-07-04T08:04:12.409Z</updated>
+  <updated>2024-09-12T12:07:31.095Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2024长城杯的RandomRSA</title>
+    <link href="https://tover.xyz/p/2024-ccb-RandomRSA/"/>
+    <id>https://tover.xyz/p/2024-ccb-RandomRSA/</id>
+    <published>2024-09-12T11:40:05.000Z</published>
+    <updated>2024-09-12T12:07:31.095Z</updated>
+    
+    
+    <summary type="html">做了今年长城杯的RandomRSA，并不是说这题有多难，只是当时搞的一个多线程爆破脚本感觉挺有意思的.</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="writeup" scheme="https://tover.xyz/tags/writeup/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2024羊城杯的部分WP</title>
+    <link href="https://tover.xyz/p/2024-ycb/"/>
+    <id>https://tover.xyz/p/2024-ycb/</id>
+    <published>2024-09-12T11:32:36.000Z</published>
+    <updated>2024-09-12T11:41:15.898Z</updated>
+    
+    
+    <summary type="html">打了今年的羊城杯，WP都写了，就顺便水个文章.</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="writeup" scheme="https://tover.xyz/tags/writeup/"/>
+    
+    <category term="PWN" scheme="https://tover.xyz/tags/PWN/"/>
+    
+  </entry>
   
   <entry>
     <title>Pairing与2024 XCTF Final的Cu2ve</title>
@@ -40,7 +80,7 @@
     <link href="https://tover.xyz/p/2024-CryptoCTF/"/>
     <id>https://tover.xyz/p/2024-CryptoCTF/</id>
     <published>2024-06-20T14:59:48.000Z</published>
-    <updated>2024-07-04T08:10:56.345Z</updated>
+    <updated>2024-09-10T09:16:30.285Z</updated>
     
     
     <summary type="html">如题.</summary>
