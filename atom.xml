@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2024-09-12T12:07:31.095Z</updated>
+  <updated>2024-11-27T10:54:47.571Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -17,11 +17,49 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>2024网鼎杯半决赛的RSA加密分析</title>
+    <link href="https://tover.xyz/p/2024-wdb-RSA/"/>
+    <id>https://tover.xyz/p/2024-wdb-RSA/</id>
+    <published>2024-11-27T11:15:07.000Z</published>
+    <updated>2024-11-27T10:54:47.571Z</updated>
+    
+    
+    <summary type="html">线下赛断网出爆破题，也是够6的.</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="writeup" scheme="https://tover.xyz/tags/writeup/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>类Pollard p-1的分解算法</title>
+    <link href="https://tover.xyz/p/pollard-etc/"/>
+    <id>https://tover.xyz/p/pollard-etc/</id>
+    <published>2024-11-03T01:35:50.000Z</published>
+    <updated>2024-11-27T03:13:41.195Z</updated>
+    
+    
+    <summary type="html">总结了一下和Pollard&#39;s p-1算法原理相似的几个算法，以及最近出现过的一些题目.</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="Math" scheme="https://tover.xyz/tags/Math/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2024长城杯的RandomRSA</title>
     <link href="https://tover.xyz/p/2024-ccb-RandomRSA/"/>
     <id>https://tover.xyz/p/2024-ccb-RandomRSA/</id>
     <published>2024-09-12T11:40:05.000Z</published>
-    <updated>2024-09-12T12:07:31.095Z</updated>
+    <updated>2024-11-18T06:45:20.948Z</updated>
     
     
     <summary type="html">做了今年长城杯的RandomRSA，并不是说这题有多难，只是当时搞的一个多线程爆破脚本感觉挺有意思的.</summary>
@@ -40,7 +78,7 @@
     <link href="https://tover.xyz/p/2024-ycb/"/>
     <id>https://tover.xyz/p/2024-ycb/</id>
     <published>2024-09-12T11:32:36.000Z</published>
-    <updated>2024-09-12T12:12:22.224Z</updated>
+    <updated>2024-09-24T02:58:39.386Z</updated>
     
     
     <summary type="html">打了今年的羊城杯，WP都写了，就顺便水个文章.</summary>
@@ -80,7 +118,7 @@
     <link href="https://tover.xyz/p/2024-CryptoCTF/"/>
     <id>https://tover.xyz/p/2024-CryptoCTF/</id>
     <published>2024-06-20T14:59:48.000Z</published>
-    <updated>2024-09-20T07:40:39.766Z</updated>
+    <updated>2024-09-20T07:46:44.725Z</updated>
     
     
     <summary type="html">如题.</summary>
@@ -437,7 +475,7 @@
     <link href="https://tover.xyz/p/n-root-in-F/"/>
     <id>https://tover.xyz/p/n-root-in-F/</id>
     <published>2023-07-18T02:17:05.000Z</published>
-    <updated>2023-09-07T09:36:06.276Z</updated>
+    <updated>2024-11-27T07:34:01.503Z</updated>
     
     
     <summary type="html">稍微补一下之前留下来的AMM（Adleman-Manders-Miller）算法的坑，发现SageMath中有函数可以直接解，于是撸了新的脚本.</summary>
@@ -475,7 +513,7 @@
     <link href="https://tover.xyz/p/2023-qwb-Crypto/"/>
     <id>https://tover.xyz/p/2023-qwb-Crypto/</id>
     <published>2023-04-26T12:54:05.000Z</published>
-    <updated>2023-08-29T11:16:47.265Z</updated>
+    <updated>2024-11-18T07:34:37.195Z</updated>
     
     
     <summary type="html">第一届（2022）强网杯密码数学专项赛，赛题一RSA 公钥密码体制的攻击的WP.</summary>
@@ -1300,11 +1338,11 @@
   </entry>
   
   <entry>
-    <title>pwnable.tw部分writeup(不定期更新)_Vol.2</title>
+    <title>pwnable.tw部分writeup_Vol.2</title>
     <link href="https://tover.xyz/p/pwnable-tw-writeup-v2/"/>
     <id>https://tover.xyz/p/pwnable-tw-writeup-v2/</id>
     <published>2020-01-16T13:30:47.000Z</published>
-    <updated>2023-02-05T06:46:01.966Z</updated>
+    <updated>2024-09-20T08:45:51.955Z</updated>
     
     
     <summary type="html">如题，上一篇太长了，所以再开一篇分开写</summary>
@@ -1336,11 +1374,11 @@
   </entry>
   
   <entry>
-    <title>pwnable.tw部分writeup(不定期更新)</title>
+    <title>pwnable.tw部分writeup_Vol.1</title>
     <link href="https://tover.xyz/p/pwnable-tw-writeup/"/>
     <id>https://tover.xyz/p/pwnable-tw-writeup/</id>
     <published>2019-10-29T12:53:35.000Z</published>
-    <updated>2023-02-05T06:43:47.245Z</updated>
+    <updated>2024-09-20T08:45:58.477Z</updated>
     
     
     <summary type="html">如题</summary>
