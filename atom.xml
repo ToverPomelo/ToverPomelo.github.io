@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2024-12-02T06:35:37.382Z</updated>
+  <updated>2024-12-31T11:46:02.212Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -15,6 +15,42 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2024楚慧被密码学题目WP</title>
+    <link href="https://tover.xyz/p/2024-chb-Crypto/"/>
+    <id>https://tover.xyz/p/2024-chb-Crypto/</id>
+    <published>2024-12-30T12:59:16.000Z</published>
+    <updated>2024-12-31T11:46:02.212Z</updated>
+    
+    
+    <summary type="html">打都打了，做都做了，写都写了，就发一下呗.</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+    <category term="Math" scheme="https://tover.xyz/tags/Math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HSSP与正交格学习笔记</title>
+    <link href="https://tover.xyz/p/HSSP-note/"/>
+    <id>https://tover.xyz/p/HSSP-note/</id>
+    <published>2024-12-19T11:59:40.000Z</published>
+    <updated>2024-12-31T11:47:38.691Z</updated>
+    
+    
+    <summary type="html">现在是个人都会用正交格攻击了，搞得我不学好像就落后似的，所以抽空学习了一下.</summary>
+    
+    
+    
+    
+    <category term="Crypto" scheme="https://tover.xyz/tags/Crypto/"/>
+    
+  </entry>
   
   <entry>
     <title>对称密码、线性代数和2024网鼎杯白虎的crypto01</title>
@@ -59,7 +95,7 @@
     <link href="https://tover.xyz/p/2024-wdb-RSA/"/>
     <id>https://tover.xyz/p/2024-wdb-RSA/</id>
     <published>2024-11-27T11:15:07.000Z</published>
-    <updated>2024-12-02T06:59:11.950Z</updated>
+    <updated>2024-12-19T06:59:48.938Z</updated>
     
     
     <summary type="html">线下赛断网出爆破题，也是够6的.</summary>
@@ -1056,7 +1092,7 @@
     <link href="https://tover.xyz/p/Order-GLnFp/"/>
     <id>https://tover.xyz/p/Order-GLnFp/</id>
     <published>2021-10-02T14:03:33.000Z</published>
-    <updated>2021-10-10T12:59:36.232Z</updated>
+    <updated>2024-12-30T07:57:12.739Z</updated>
     
     
     <summary type="html">填一下上一篇文章剩下的坑，讲一下模p矩阵群（其实就是GL(n,Fp)）的阶，当时做题的一些猜想和后来找到的证明.</summary>
