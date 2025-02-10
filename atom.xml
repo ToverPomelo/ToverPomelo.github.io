@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2025-01-23T09:29:19.001Z</updated>
+  <updated>2025-02-10T08:02:02.306Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>PWN学习笔记vol.1 —— Tcache、setcontext和CISCN 2021初赛的silverwolf</title>
+    <link href="https://tover.xyz/p/PWN-Note-1-Tcache-and-Setcontext/"/>
+    <id>https://tover.xyz/p/PWN-Note-1-Tcache-and-Setcontext/</id>
+    <published>2025-02-08T11:29:34.000Z</published>
+    <updated>2025-02-10T08:02:02.306Z</updated>
+    
+    
+    <summary type="html">怎么用Tcachebin的UAF到Unsortedbin泄露libc地址，然后用setcontext从free_hook到rop.</summary>
+    
+    
+    
+    
+    <category term="writeup" scheme="https://tover.xyz/tags/writeup/"/>
+    
+    <category term="PWN" scheme="https://tover.xyz/tags/PWN/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PWN学习笔记vol.0 —— 复健与HNCTF 2022 WEEK4的ez_uaf</title>
     <link href="https://tover.xyz/p/PWN-Note_0-Reborn-and-ez-uaf/"/>
     <id>https://tover.xyz/p/PWN-Note_0-Reborn-and-ez-uaf/</id>
     <published>2025-01-22T11:35:39.000Z</published>
-    <updated>2025-01-23T09:29:19.001Z</updated>
+    <updated>2025-02-10T03:12:46.885Z</updated>
     
     
     <summary type="html">众所周知我以前还是一个PWN手，但是转密码后已经有4-5年没碰过PWN了，最近在做一些PWN的复健，顺便记录一下学习的心得.</summary>
@@ -1522,7 +1541,7 @@
     <link href="https://tover.xyz/p/libc-compile/"/>
     <id>https://tover.xyz/p/libc-compile/</id>
     <published>2019-08-21T10:43:53.000Z</published>
-    <updated>2023-10-19T02:27:51.417Z</updated>
+    <updated>2025-02-08T02:21:00.376Z</updated>
     
     
     <summary type="html">编译不同版本的带调试信息的libc，以及在运行时、pwntools脚本、GDB中更换不同的libc库的方法介绍</summary>
