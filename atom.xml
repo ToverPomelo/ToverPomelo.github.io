@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2025-02-24T10:42:26.225Z</updated>
+  <updated>2025-03-03T13:42:43.149Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>PWN学习笔记vol.4 —— House of Some 2</title>
+    <link href="https://tover.xyz/p/PWN-Note-4-House-of-Some-2/"/>
+    <id>https://tover.xyz/p/PWN-Note-4-House-of-Some-2/</id>
+    <published>2025-02-27T11:36:54.000Z</published>
+    <updated>2025-03-03T13:42:43.149Z</updated>
+    
+    
+    <summary type="html">这篇继续libc-2.34的_IO_FILE利用，讲一下在_IO_file_jumps不可写的时候应该怎么打，还是以上次的duck为例.</summary>
+    
+    
+    
+    
+    <category term="writeup" scheme="https://tover.xyz/tags/writeup/"/>
+    
+    <category term="PWN" scheme="https://tover.xyz/tags/PWN/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PWN学习笔记vol.3 —— Libc-2.34的Tcache机制和_IO_FILE</title>
     <link href="https://tover.xyz/p/PWN-Note-3-Tcache-in-Libc-2-34-and-IO-File/"/>
     <id>https://tover.xyz/p/PWN-Note-3-Tcache-in-Libc-2-34-and-IO-File/</id>
     <published>2025-02-20T10:23:40.000Z</published>
-    <updated>2025-02-24T10:42:26.225Z</updated>
+    <updated>2025-03-03T13:43:30.131Z</updated>
     
     
     <summary type="html">如题，这篇学一下高版本libc的机制，循序渐进就先用libc-2.34，以[CISCN 2022 华东北]的duck为例.</summary>
@@ -40,7 +59,7 @@
     <link href="https://tover.xyz/p/PWN-Note-2-Off-by-One-and-Unlink/"/>
     <id>https://tover.xyz/p/PWN-Note-2-Off-by-One-and-Unlink/</id>
     <published>2025-02-17T11:14:24.000Z</published>
-    <updated>2025-02-20T10:21:14.758Z</updated>
+    <updated>2025-03-03T13:44:05.911Z</updated>
     
     
     <summary type="html">如题，这次是unsortedbin的利用</summary>
@@ -59,7 +78,7 @@
     <link href="https://tover.xyz/p/PWN-Note-1-Tcache-and-Setcontext/"/>
     <id>https://tover.xyz/p/PWN-Note-1-Tcache-and-Setcontext/</id>
     <published>2025-02-08T11:29:34.000Z</published>
-    <updated>2025-02-17T10:38:39.841Z</updated>
+    <updated>2025-03-03T13:44:21.999Z</updated>
     
     
     <summary type="html">怎么用Tcachebin的UAF到Unsortedbin泄露libc地址，然后用setcontext从free_hook到rop.</summary>
@@ -268,7 +287,7 @@
     <link href="https://tover.xyz/p/2024-CryptoCTF/"/>
     <id>https://tover.xyz/p/2024-CryptoCTF/</id>
     <published>2024-06-20T14:59:48.000Z</published>
-    <updated>2025-02-24T06:15:43.250Z</updated>
+    <updated>2025-02-25T02:18:51.119Z</updated>
     
     
     <summary type="html">如题.</summary>
