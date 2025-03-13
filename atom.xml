@@ -6,7 +6,7 @@
   <link href="https://tover.xyz/atom.xml" rel="self"/>
   
   <link href="https://tover.xyz/"/>
-  <updated>2025-03-03T13:42:43.149Z</updated>
+  <updated>2025-03-13T11:00:27.127Z</updated>
   <id>https://tover.xyz/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>PWN学习笔记vol.5 —— happy_note和House of Some 1</title>
+    <link href="https://tover.xyz/p/PWN-Note-5-happy-note-and-house-of-some-1/"/>
+    <id>https://tover.xyz/p/PWN-Note-5-happy-note-and-house-of-some-1/</id>
+    <published>2025-03-10T11:51:26.000Z</published>
+    <updated>2025-03-13T11:00:27.127Z</updated>
+    
+    
+    <summary type="html">上次讲了House of Some 2，这次讲讲House of Some 1，然后换一道题，看看巅峰极客 2022的happy note.</summary>
+    
+    
+    
+    
+    <category term="writeup" scheme="https://tover.xyz/tags/writeup/"/>
+    
+    <category term="PWN" scheme="https://tover.xyz/tags/PWN/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PWN学习笔记vol.4 —— House of Some 2</title>
     <link href="https://tover.xyz/p/PWN-Note-4-House-of-Some-2/"/>
     <id>https://tover.xyz/p/PWN-Note-4-House-of-Some-2/</id>
     <published>2025-02-27T11:36:54.000Z</published>
-    <updated>2025-03-03T13:42:43.149Z</updated>
+    <updated>2025-03-11T03:16:33.951Z</updated>
     
     
     <summary type="html">这篇继续libc-2.34的_IO_FILE利用，讲一下在_IO_file_jumps不可写的时候应该怎么打，还是以上次的duck为例.</summary>
